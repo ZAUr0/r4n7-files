@@ -1,6 +1,15 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21T00:00:00Z",
+  "updated_at": "2026-09-20T23:28:53Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
-  "reviews": []
+  "reviews": [
+    {
+      "id": "review_20260920_d86a1b",
+      "name": "Заур",
+      "rating": 4,
+      "text": "Думаю могло быть лучше, но это лучше чем могло не быть’",
+      "date": "2026-09-20",
+      "status": "approved"
+    }
+  ]
 }
