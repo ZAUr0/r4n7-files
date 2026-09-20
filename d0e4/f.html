@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Франшиза ZStore+</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --ink: #111318;
+    --muted: #6e7380;
+    --line: rgba(17, 19, 24, 0.08);
+    --accent: #0088fe;
+    --accent-soft: rgba(0, 136, 254, 0.12);
+    --shadow: 0 18px 40px rgba(17, 19, 24, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #161618;
+      --ink: #f5f5f7;
+      --muted: #98989f;
+      --line: rgba(255, 255, 255, 0.08);
+      --accent-soft: rgba(10, 132, 255, 0.18);
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    padding: 8px 20px 48px;
+  }
+
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 6px 0 10px;
+  }
+
+  .kicker:before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    border-radius: 99px;
+    background: var(--accent);
+  }
+
+  h1 {
+    margin: 0 0 8px;
+    font-family: "New York", "Times New Roman", ui-serif, Georgia, serif;
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+  }
+
+  .lead {
+    margin: 0 0 22px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 22px 20px 20px;
+    border-radius: 28px;
+    background:
+      radial-gradient(120% 90% at 0% 0%, rgba(0, 136, 254, 0.28), transparent 46%),
+      var(--card);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+  }
+
+  .hero .date {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .hero h2 {
+    margin: 10px 0 8px;
+    font-size: 26px;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+
+  .hero p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .card {
+    padding: 16px 16px 15px;
+    border-radius: 22px;
+    background: var(--card);
+    border: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 99px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .card h3 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+
+  .card p {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .cta {
+    display: block;
+    margin-top: 18px;
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: var(--accent);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .note {
+    margin-top: 14px;
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: var(--accent-soft);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .note strong {
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+  <div class="kicker">ZStore+</div>
+  <h1>Франшиза</h1>
+  <p class="lead">Готовый продукт, каталог и поддержка — чтобы запустить своё направление на базе ZStore+.</p>
+
+  <article class="hero">
+    <div class="date">20 сентября 2026</div>
+    <h2>Свой магазин без разработки с нуля</h2>
+    <p>Вы получаете приложение, обновляемый каталог, инструкции и канал связи. Мы отвечаем за техническую часть, вы — за локальный запуск и клиентов.</p>
+  </article>
+
+  <div class="stack">
+    <article class="card">
+      <span class="eyebrow">Что входит</span>
+      <h3>Пакет для старта</h3>
+      <p>Доступ к каталогу, оформление раздела, обновления и базовые материалы для продвижения.</p>
+      <div class="meta">20 сентября 2026</div>
+    </article>
+
+    <article class="card">
+      <span class="eyebrow">Условия</span>
+      <h3>Прозрачная модель</h3>
+      <p>Фиксированный вход, понятная доля и сопровождение на старте. Детали обсуждаем индивидуально по региону.</p>
+      <div class="meta">20 сентября 2026</div>
+    </article>
+
+    <article class="card">
+      <span class="eyebrow">Связь</span>
+      <h3>Напишите в Telegram</h3>
+      <p>Расскажем про условия, сроки запуска и что нужно для первой точки.</p>
+      <div class="meta">20 сентября 2026</div>
+    </article>
+  </div>
+
+  <a class="cta" href="https://t.me/dadaeevskiy">Обсудить франшизу</a>
+
+  <div class="note">
+    Контент раздела живёт на GitHub: правьте <strong>e.json</strong> и <strong>f.html</strong> — приложение подтянет выпуск само.
+  </div>
+</body>
+</html>
