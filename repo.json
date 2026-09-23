@@ -4015,6 +4015,34 @@
       ]
     },
     {
+      "name": "TikTok Мод",
+      "bundleIdentifier": "com.zhiliaoapp.musically1",
+      "developerName": "TikTok Pte. Ltd.",
+      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/e7f6a8c7.png",
+      "localizedDescription": "TikTok Мод — модифицированная версия TikTok с дополнительными инструментами для ленты, скачивания и удобства.\n\nЧто даёт TikTok Мод\n• Расширенные настройки ленты For You и подписок\n• Скачивание видео без водяного знака (где поддерживается)\n• Дополнительные инструменты и меню настроек мода\n• Гибкая персонализация интерфейса\n\nСмотрите короткие видео, создавайте ролики и настраивайте TikTok под себя — с возможностями, которых нет в обычной версии.\n\nНекоторые функции зависят от версии мода и региона.",
+      "subtitle": "TikTok с расширенными возможностями",
+      "tintColor": "010101",
+      "category": "social",
+      "pinnedCategory": "social",
+      "website": "https://www.tiktok.com/",
+      "versions": [
+        {
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/179934bb.ipa",
+          "size": 464218803,
+          "version": "46.7.0",
+          "buildVersion": "467038",
+          "date": "2026-09-23T00:00:00Z",
+          "minOSVersion": "10.0"
+        }
+      ],
+      "version": "46.7.0",
+      "versionDate": "2026-09-23T00:00:00Z",
+      "size": 464218803,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/179934bb.ipa",
+      "skipStoreSync": true,
+      "ageRating": "12+"
+    },
+    {
       "name": "Газпромбанк",
       "bundleIdentifier": "ru.to.the.top.story.prod",
       "developerName": "Газпромбанк",
