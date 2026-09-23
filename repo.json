@@ -3859,13 +3859,7 @@
       "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/092a4680.ipa",
       "rating": 4.69,
       "ratingCount": 119780,
-      "screenshotURLs": [
-        "https://static.rustore.ru/2026/7/17/72/apk/330175/content/SCREENSHOT/d6561809-7777-463f-9357-21e4067f407e.png",
-        "https://static.rustore.ru/2026/7/17/6d/apk/330175/content/SCREENSHOT/037f3a8f-95ac-470d-83a7-afbaa8cd7335.png",
-        "https://static.rustore.ru/2026/7/17/b2/apk/330175/content/SCREENSHOT/e4a4cc1d-b78c-4e6d-b8f0-946e038d7b43.png",
-        "https://static.rustore.ru/2026/7/17/c4/apk/330175/content/SCREENSHOT/3f66aaad-4358-426c-9efb-8b7c583684a9.png",
-        "https://static.rustore.ru/2026/7/17/3e/apk/330175/content/SCREENSHOT/d8066541-f92b-4e22-8d10-19e859a4cfca.png"
-      ],
+      "screenshotURLs": [],
       "appStoreURL": "https://apps.apple.com/ru/app/tiktok-%D1%82%D0%B8%D0%BA%D1%82%D0%BE%D0%BA/id835599320?uo=4",
       "rustoreURL": "https://www.rustore.ru/catalog/app/ru.ok.android",
       "downloads": 20000000,
@@ -3930,7 +3924,8 @@
           "text": "Классная соц сеть",
           "date": "23 сен 2026"
         }
-      ]
+      ],
+      "pinnedScreenshots": true
     },
     {
       "name": "Instagram+",
@@ -4040,7 +4035,15 @@
       "size": 464218803,
       "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/179934bb.ipa",
       "skipStoreSync": true,
-      "ageRating": "12+"
+      "ageRating": "12+",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/tiktok-mod-1.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/tiktok-mod-2.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/tiktok-mod-3.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/tiktok-mod-4.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/tiktok-mod-5.jpg"
+      ],
+      "pinnedScreenshots": true
     },
     {
       "name": "Газпромбанк",
