@@ -3169,30 +3169,30 @@
       ]
     },
     {
-      "name": "WhatsApp",
-      "bundleIdentifier": "net.whatsapp.WhatsApp",
+      "name": "WhatsApp+",
+      "bundleIdentifier": "net.whatsapp.WhatsApp1",
       "developerName": "WhatsApp Inc.",
-      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/277612be.png",
+      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/f1024198.png",
       "localizedDescription": "WhatsApp from Meta — бесплатное приложение для звонков и обмена сообщениями, которое насчитывает свыше 2 миллиардов пользователей более чем в 180 странах. Это надежное, конфиденциальное и очень удобное решение помогает людям оставаться на связи с друзьями и родными по всему миру. WhatsApp работает на мобильных устройствах, планшетах и компьютерах даже при низкой скорости подключения к Интернету — без платной подписки*.\n\nКонфиденциальные сообщения и звонки по всему миру\n\nВаша конфиденциальность — наш приоритет. Личные сообщения и звонки в WhatsApp защищены сквозным шифрованием, поэтому всё, что вы обсуждаете, остается между вами. Никто не сможет прочитать или прослушать их, даже WhatsApp.\n\nПростое и надежное общение — моментально\n\nНе нужно придумывать имя пользователя или выполнять вход, достаточно указать номер телефона, чтобы увидеть свои контакты в WhatsApp и начать обмениваться сообщениями. Установив связь с другими устройствами, например iPad, вы сможете общаться где и когда угодно.\n\nАудио- и видеозвонки высокого качества\n\nМы предоставляем бесплатные защищенные аудио- и видеозвонки, в которых могут участвовать до 32 человек. Звонки поддерживаются на разных устройствах, даже при низкой скорости подключения. Требуется только доступ к Интернету, который предоставляется вашим оператором связи.\n\nГрупповые чаты\n\nОставайтесь на связи с друзьями и родными благодаря групповым чатам и звонкам, защищенным сквозным шифрованием. Обменивайтесь сообщениями, фото, видео и документами на телефоне, планшете и компьютере. Вы также можете отправлять ссылки на звонки и демонстрировать свой экран для совместных обсуждений.\n\nСвязь в реальном времени\n\nДелитесь своим местоположением в личных и групповых чатах, используя WhatsApp на мобильном телефоне. Когда текста недостаточно, отправляйте голосовые сообщения.\n\nСтатус\n\nДелитесь интересными моментами из жизни с теми, кто вам дорог. В статус можно добавить текст, фото, видео или GIF, которые исчезнут через 24 часа. Вы решаете сами, кому будет доступен ваш статус. Просто выберите, с кем вы хотите поделиться — со всеми или отдельными контактами. И сделайте свою жизнь ярче.\n\n* За передачу данных может взиматься плата. Подробности уточняйте у оператора связи.\n\n\n---------------------------------------------------------------------------\n\nЧтобы отправить вопрос или отзыв, откройте WhatsApp и выберите \"Настройки\" > \"Помощь\" > \"Напишите нам\".\n\nУсловия предоставления услуг: https://www.whatsapp.com/legal/terms-of-service \n\nПодробнее о конфиденциальном обмене сообщениями: https://www.whatsapp.com/privacy \n\nПодробнее о безопасности в WhatsApp: https://www.whatsapp.com/security",
-      "subtitle": "WhatsApp from Meta — бесплатное приложение для звонков и обмена сообщениями, которое насчитывает свыше 2 миллиардов поль",
+      "subtitle": "WhatsApp+",
       "tintColor": "3C94FC",
       "category": "social",
       "pinnedCategory": "social",
       "website": "http://www.whatsapp.com/",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/c4dcbe17.ipa",
-          "size": 156332078,
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/554f171b.ipa",
+          "size": 162620473,
           "version": "26.36.10",
           "buildVersion": "1065850498",
-          "date": "2026-09-18T00:00:00Z",
-          "minOSVersion": "15.1"
+          "date": "2026-09-23T00:00:00Z",
+          "minOSVersion": "10.0"
         }
       ],
       "version": "26.36.10",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 156332078,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/c4dcbe17.ipa",
+      "versionDate": "2026-09-23T00:00:00Z",
+      "size": 162620473,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/554f171b.ipa",
       "rating": 4.72191,
       "ratingCount": 4061689,
       "screenshotURLs": [
@@ -3205,30 +3205,30 @@
       "appStoreURL": "https://apps.apple.com/ru/app/whatsapp-messenger/id310633997?uo=4"
     },
     {
-      "name": "WhatsApp Business",
-      "bundleIdentifier": "net.whatsapp.WhatsAppSMB",
+      "name": "WA Business+",
+      "bundleIdentifier": "net.whatsapp.WhatsAppSMB1",
       "developerName": "WhatsApp Inc.",
-      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/0848cf5e.png",
+      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/3cad1814.png",
       "localizedDescription": "Об этом приложении\n\nВсё, что вы любите в WhatsApp, плюс инструменты для бизнеса\nБесплатное приложение WhatsApp Business повысит эффективность вашей работы, поможет завоевать доверие клиентов и развивать компанию. \n\nВ приложении доступны бесплатные звонки* и бесплатный обмен сообщениями с пользователями из-за рубежа*, а также бизнес-функции для повышения результативности переписок.\n\nУстановите приложение и получите преимущества для бизнеса:\n\nЭффективность. Экономьте время. Пусть приложение работает за вас! Автоматически отправляйте быстрые ответы и сообщения “Нет на месте”, чтобы не упустить ни одной возможности. Упорядочивайте, фильтруйте и находите переписки с помощью ярлыков. Публикуйте специальные предложения и новости в статусе и принимайте заказы и платежи** прямо в приложении, чтобы повысить качество обслуживания. \nДоверие клиентов. Профиль компании вызывает больше доверия, если он создан на безопасной платформе и выглядит профессионально. В приложении можно быстро отвечать на вопросы и выстраивать долговременные отношения с клиентами. Рекомендуем оформить подписку Meta Verified***, чтобы подтвердить подлинность компании.\nПовышение продаж и развитие. Привлекайте внимание, размещайте рекламу и находите больше ценных клиентов. Повышайте продажи за счет таргетинга на конкретную аудиторию, создавайте объявления с переходом в WhatsApp и демонстрируйте каталог товаров. Упростите для клиентов оформление заказов и платежей**.\n\nЧасто задаваемые вопросы\nВсе ли функции бесплатны?\nЗа установку и использование приложения платить не нужно, но некоторые функции в нем платные.\n\nСмогу ли я по-прежнему использовать личный аккаунт WhatsApp?\nДа. Если у вас два номера телефона, вы сможете использовать личный и бизнес-аккаунт на одном устройстве.\n\nСмогу ли я перенести историю чатов?\nДа. Чтобы перенести сообщения, медиафайлы и контакты в бизнес-аккаунт, настройте приложение WhatsApp Business и восстановите резервную копию аккаунта WhatsApp.\n\nСколько устройств можно подключить?\nК аккаунту можно подключить не более пяти веб-устройств или мобильных телефонов (их количество увеличится до 10, если вы оформите подписку Meta Verified***).\n\n* За передачу данных может взиматься плата. Обратитесь за информацией к своему оператору.\n** Доступно не во всех странах.\n*** Скоро будет доступно во всем мире.",
-      "subtitle": "Об этом приложении",
+      "subtitle": "WA Business+",
       "tintColor": "3C94FC",
       "category": "social",
       "pinnedCategory": "social",
       "website": "https://www.whatsapp.com/business/",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/d888778a.ipa",
-          "size": 163014112,
-          "version": "26.36.74",
-          "buildVersion": "1067315575",
-          "date": "2026-09-18T00:00:00Z",
-          "minOSVersion": "15.1"
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/dbd1cf3d.ipa",
+          "size": 171427281,
+          "version": "26.36.10",
+          "buildVersion": "1065904769",
+          "date": "2026-09-23T00:00:00Z",
+          "minOSVersion": "10.0"
         }
       ],
-      "version": "26.36.74",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 163014112,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/d888778a.ipa",
+      "version": "26.36.10",
+      "versionDate": "2026-09-23T00:00:00Z",
+      "size": 171427281,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/dbd1cf3d.ipa",
       "rating": 4.76454,
       "ratingCount": 265484,
       "screenshotURLs": [
@@ -3748,30 +3748,30 @@
       ]
     },
     {
-      "name": "Instagram",
-      "bundleIdentifier": "com.burbn.instagram",
+      "name": "Instagram+",
+      "bundleIdentifier": "com.burbn.instagram1",
       "developerName": "Instagram, Inc.",
-      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/71fff4c4.png",
+      "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/82f17549.png",
       "localizedDescription": "Little moments lead to big friendships. Share yours on Instagram. \n— From Meta\n\nConnect with friends, find other fans, and see what people around you are up to and into. Explore your interests and post what's going on, from your daily moments to life's highlights.\n\nShare what you’re up to and into:\n- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels.\n- Keep up with friends on the fly with Stories and Notes that disappear after 24 hours.\n- Start group chats and share unfiltered moments with your Close Friends.\n- Share memories from recent events or trips in Feed.\n- Customize your posts with exclusive templates, music, stickers and filters.\n\nDive into your interests.\n- Watch videos from your favorite creators and discover new content that’s personalized to your interests.\n- Get inspired by photos and videos from new accounts in Explore.\n- Discover brands and small businesses, and shop products that are relevant to your personal style.\n\nSome Instagram features may not be available in your country or region.\n\nTerms and Policies: https://help.instagram.com/581066165581870\n\nConsumer Health Privacy Policy: https://privacycenter.instagram.com/policies/health\n\nLearn how we're working to help keep our communities safe across Meta technologies at the Instagram Safety Center: https://about.instagram.com/safety",
-      "subtitle": "Little moments lead to big friendships. Share yours on Instagram.",
+      "subtitle": "Instagram+",
       "tintColor": "3C94FC",
       "category": "social",
       "pinnedCategory": "social",
       "website": "http://instagram.com/",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/86509c37.ipa",
-          "size": 317693649,
-          "version": "445.0.0",
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/8ec64563.ipa",
+          "size": 315891832,
+          "version": "448.0.0",
           "buildVersion": "999999999999",
-          "date": "2026-09-18T00:00:00Z",
-          "minOSVersion": "16.3"
+          "date": "2026-09-23T00:00:00Z",
+          "minOSVersion": "10.0"
         }
       ],
-      "version": "445.0.0",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 317693649,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/86509c37.ipa",
+      "version": "448.0.0",
+      "versionDate": "2026-09-23T00:00:00Z",
+      "size": 315891832,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/8ec64563.ipa",
       "rating": 4.69062,
       "ratingCount": 29495913,
       "screenshotURLs": [
