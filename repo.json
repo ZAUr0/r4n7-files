@@ -3233,11 +3233,14 @@
       "rating": 4.76454,
       "ratingCount": 265484,
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/df/96/e3/df96e30b-346f-8815-9689-53cc22ac8039/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ba/fa/55/bafa5515-bbf9-b403-e20b-b0a38a453464/pr_source.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/83/ab/93/83ab932f-7281-2ed3-2954-fa9af1b59c07/pr_source.jpg/392x696bb.jpg"
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-1.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-2.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-3.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-4.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-5.jpg"
       ],
-      "appStoreURL": "https://apps.apple.com/ru/app/whatsapp-business/id1386412985?uo=4"
+      "skipStoreSync": true,
+      "pinnedScreenshots": true
     },
     {
       "name": "VK",
