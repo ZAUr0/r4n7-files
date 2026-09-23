@@ -3196,13 +3196,14 @@
       "rating": 4.72191,
       "ratingCount": 4061689,
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/98/a2/c798a2e8-3876-75f5-d36b-3866125e1180/6.9__Display_1-ru_RU.png/1242x2688bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/bf/87/b0bf87bf-0cd5-7789-05b1-63101f8eedd8/6.9__Display_2-ru_RU.png/1242x2688bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/75/c3/76/75c376ef-2e0d-f859-8d5f-d2e8af3b9a54/6.9__Display_3-ru_RU.png/1242x2688bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/cb/41/7fcb4151-48fb-24fe-07fb-0fbb79836d6c/6.9__Display_4-ru_RU.png/1242x2688bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/8b/12/c68b1291-dd12-5022-cff2-a0c3a6151630/6.9__Display_5-ru_RU.png/1242x2688bb.jpg"
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-1.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-2.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-3.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-4.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/whatsapp-plus-5.jpg"
       ],
-      "appStoreURL": "https://apps.apple.com/ru/app/whatsapp-messenger/id310633997?uo=4"
+      "skipStoreSync": true,
+      "pinnedScreenshots": true
     },
     {
       "name": "WA Business+",
