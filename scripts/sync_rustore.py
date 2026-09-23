@@ -351,9 +351,10 @@ def apply_info(app: dict, info: dict, reviews: list[dict]) -> None:
         versions = app.get("versions")
         if isinstance(versions, list) and versions:
             versions[0]["localizedDescription"] = info["whatsNew"].strip()
-    shots = screenshots(info)
-    if shots:
-        app["screenshotURLs"] = shots
+    if not app.get("pinnedScreenshots"):
+        shots = screenshots(info)
+        if shots:
+            app["screenshotURLs"] = shots
     age = ((info.get("ageRestriction") or {}) if isinstance(info.get("ageRestriction"), dict) else {}).get("category")
     age = age or info.get("ageLegal")
     if age:
@@ -389,6 +390,8 @@ def apply_pins(app: dict) -> None:
 
 
 def sync_app(app: dict) -> str | None:
+    if app.get("skipStoreSync") or app.get("pinnedScreenshots"):
+        return None
     package = package_from_url(app.get("rustoreURL")) or guessed_package(app)
     if not package:
         return None

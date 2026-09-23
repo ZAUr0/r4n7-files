@@ -3775,16 +3775,14 @@
       "rating": 4.69062,
       "ratingCount": 29495913,
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/e2/8b/50e28b44-daa5-7101-6fb6-2d0e10fc72f3/1_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/a5/33/4da53369-3dce-b9b4-2a0c-1c6957dd40c4/1_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/38/e1/1038e1c7-751f-c4ea-39b9-d9f4d08fc08d/2_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/d0/6d/d4d06d20-f442-2b7c-8a4e-24d427542910/3_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c2/2e/23/c22e2319-6907-e41e-55dd-34e074b2a3f3/4_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/a4/32/fca432b3-6ad8-604b-ed2e-9081ce0d5cf3/5_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/d2/d2/d6d2d26a-687e-8c04-e42c-ae1b9f67bc74/6_iOS_5.5.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/8b/82/ba8b8222-27f6-42a7-dae5-0dfba160809e/7_iOS_5.5.jpg/392x696bb.jpg"
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/instagram-plus-1.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/instagram-plus-2.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/instagram-plus-3.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/instagram-plus-4.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/instagram-plus-5.jpg"
       ],
-      "appStoreURL": "https://apps.apple.com/us/app/instagram/id389801252?uo=4"
+      "skipStoreSync": true,
+      "pinnedScreenshots": true
     },
     {
       "name": "Газпромбанк",
