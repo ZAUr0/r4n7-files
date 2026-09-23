@@ -3231,15 +3231,16 @@
         }
       ],
       "screenshotURLs": [
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/68/de/be/68debe34-5f02-501d-f990-b2443c7a19e4/c781af5f-4921-486c-9b25-6e4062916d06_iOS-5.5-in_1.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/c4/8e/60c48e84-2d82-fc2f-b857-b53824441e87/caf00f4c-dcc5-4181-8f6b-75cf60379027_iOS-5.5-in_2.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/27/0f/76270fda-dbfd-ad3c-3543-2a0f4ff6cc36/59e2a127-f8d6-4326-88e9-fe9e418abc72_iOS-5.5-in_3.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/cc/aa/c9ccaafb-d322-2b15-03f7-865e656bf0c2/08b20dc6-5b0f-4ff4-873c-5417d21fddd9_iOS-5.5-in_4.jpg/392x696bb.jpg",
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/d4/86/75d486c9-6164-c824-1d48-2f0a5c04d6c6/b1bd0449-e555-4b77-974d-3fb9e8474688_iOS-5.5-in_5.jpg/392x696bb.jpg"
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/youtube-plus-1.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/youtube-plus-2.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/youtube-plus-3.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/youtube-plus-4.jpg",
+        "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/youtube-plus-5.jpg"
       ],
       "skipStoreSync": true,
       "rating": 4.61937,
-      "ratingCount": 4371426
+      "ratingCount": 4371426,
+      "pinnedScreenshots": true
     },
     {
       "name": "WA Business+",
