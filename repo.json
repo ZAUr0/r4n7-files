@@ -14409,7 +14409,7 @@
     },
     {
       "name": "Rave",
-      "bundleIdentifier": "sh.weme.wemesh2",
+      "bundleIdentifier": "sh.weme.wemesh",
       "developerName": "Rave",
       "rustoreURL": "https://www.rustore.ru/catalog/app/com.wemesh.android",
       "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/8f7432b2.png",
@@ -14420,19 +14420,18 @@
       "pinnedCategory": "social",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/5a5b1ab1.ipa",
-          "size": 144891368,
-          "version": "8.1.2",
-          "buildVersion": "2723",
-          "date": "2026-09-18T00:00:00Z",
-          "minOSVersion": "10.0",
-          "localizedDescription": "Спасибо, что пользуетесь Rave! Это обновление содержит исправления и улучшения стабильности."
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/8dcc1791.ipa",
+          "size": 112384506,
+          "version": "8.0",
+          "buildVersion": "2620",
+          "date": "2026-09-24T00:05:08Z",
+          "minOSVersion": "10.0"
         }
       ],
-      "version": "8.1.2",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 144891368,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/5a5b1ab1.ipa",
+      "version": "8.0",
+      "versionDate": "2026-09-24T00:05:08Z",
+      "size": 112384506,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/8dcc1791.ipa",
       "rating": 4.39,
       "ratingCount": 126,
       "downloads": 500000,
