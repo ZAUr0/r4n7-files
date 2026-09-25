@@ -9,8 +9,8 @@
       "category": "Мессенджеры",
       "iconURL": "icons/whatsapp.png",
       "tintColor": "25D366",
-      "videoURL": "https://www.youtube.com/shorts/KqqSWm-XTh4",
-      "description": "Пошаговая инструкция: как установить WhatsApp через zStore, настроить уведомления и перенести чаты. Ниже — вертикальное видео-превью (YouTube Shorts)."
+      "videoURL": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
+      "description": "Тестовое вертикальное превью: встроенное YouTube-видео (официальный embed demo). Позже замените videoURL на свой Shorts, у которого разрешено встраивание."
     }
   ]
 }
