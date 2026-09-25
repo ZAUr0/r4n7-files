@@ -1,7 +1,29 @@
 {
   "name": "ZStore Services",
   "subtitle": "Нужные для вашего айфон сервисы",
-  "revision": 5,
+  "revision": 6,
   "badge": 0,
-  "services": []
+  "services": [
+    {
+      "id": "vaynah-vpn",
+      "name": "Вайнах VPN",
+      "subtitle": "VPN",
+      "developer": "Zaur Dadaev",
+      "price": "от 200 ₽/мес.",
+      "category": "VPN",
+      "iconURL": "icons/VPNIcon.png",
+      "tintColor": "#0088FE",
+      "screenshots": [],
+      "features": [
+        "Быстрое подключение",
+        "Без надоедливых реклам",
+        "Самые быстрые сервера в РФ"
+      ],
+      "description": "Вайнах VPN — быстрый и стабильный VPN для iPhone. Подключение без лишней рекламы, сервера в России и удобная оплата прямо в Telegram.",
+      "whatsNew": "Обновили список серверов и ускорили подключение.",
+      "version": "2.0",
+      "actionTitle": "ОПЛАТИТЬ",
+      "actionURL": "https://t.me/VaynahVPNbot"
+    }
+  ]
 }
