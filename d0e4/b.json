@@ -1,16 +1,5 @@
 {
   "name": "Справочник",
   "subtitle": "Инструкции и гайды",
-  "items": [
-    {
-      "id": "whatsapp",
-      "name": "Инструкция для WhatsApp",
-      "subtitle": "Как установить и настроить",
-      "category": "social",
-      "iconURL": "icons/whatsapp.png",
-      "tintColor": "25D366",
-      "videoURL": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
-      "description": "Тестовое вертикальное превью: встроенное YouTube-видео (официальный embed demo). Позже замените videoURL на свой Shorts, у которого разрешено встраивание."
-    }
-  ]
+  "items": []
 }
