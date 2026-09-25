@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21T07:48:50Z",
+  "updated_at": "2026-09-25T04:38:04Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260925_4b860c",
+      "name": "Ахмад",
+      "rating": 5,
+      "text": "👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻",
+      "date": "2026-09-25",
+      "status": "approved"
+    },
     {
       "id": "review_20260921_9b3793",
       "name": "Заур",
