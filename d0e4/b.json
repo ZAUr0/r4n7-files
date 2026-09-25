@@ -1,8 +1,16 @@
 {
-  "id": "whatsapp",
-  "name": "Инструкция для WhatsApp",
-  "subtitle": "Как установить и настроить",
-  "iconURL": "icons/whatsapp.png",
-  "videoURL": "https://youtube.com/shorts/KqqSWm-XTh4?si=m2j6PdE89d2ODPz6",
-  "description": "Текст с GitHub"
+  "name": "Справочник",
+  "subtitle": "Инструкции и гайды",
+  "items": [
+    {
+      "id": "whatsapp",
+      "name": "Инструкция для WhatsApp",
+      "subtitle": "Как установить и настроить",
+      "category": "Мессенджеры",
+      "iconURL": "icons/whatsapp.png",
+      "tintColor": "25D366",
+      "videoURL": "https://www.youtube.com/shorts/KqqSWm-XTh4",
+      "description": "Пошаговая инструкция: как установить WhatsApp через zStore, настроить уведомления и перенести чаты. Ниже — вертикальное видео-превью (YouTube Shorts)."
+    }
+  ]
 }
