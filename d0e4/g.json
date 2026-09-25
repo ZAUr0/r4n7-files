@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-25T04:38:04Z",
+  "updated_at": "2026-09-25T20:16:16Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260925_df5de6",
+      "name": "Аслан",
+      "rating": 5,
+      "text": "Очень хорошее и удобное приложение, все ясно и понятно всем! Советую каждому. Дал аьтто бойла",
+      "date": "2026-09-25",
+      "status": "approved"
+    },
     {
       "id": "review_20260925_4b860c",
       "name": "Ахмад",
