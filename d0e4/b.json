@@ -6,7 +6,7 @@
       "id": "whatsapp",
       "name": "Инструкция для WhatsApp",
       "subtitle": "Как установить и настроить",
-      "category": "Мессенджеры",
+      "category": "social",
       "iconURL": "icons/whatsapp.png",
       "tintColor": "25D366",
       "videoURL": "https://www.youtube.com/watch?v=M7lc1UVf-VE",
