@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T04:56:43Z",
+  "updated_at": "2026-09-27T16:38:56Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260927_f514b2",
+      "name": "Ильяс",
+      "rating": 5,
+      "text": "Как всегда уровень",
+      "date": "2026-09-27",
+      "status": "approved"
+    },
     {
       "id": "review_20260927_43c553",
       "name": "Хайрулла",
