@@ -1,9 +1,13 @@
-name: Sync RuStore
+name: Build lite catalog
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */12 * * *"
+  push:
+    branches: [main]
+    paths:
+      - repo.json
+      - "icons/*"
+      - scripts/build_lite.py
 
 permissions:
   contents: write
@@ -13,20 +17,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  sync:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Pull descriptions and reviews
-        run: python3 scripts/sync_rustore.py
       - name: Build lite catalog
         run: |
           pip install --quiet pillow
           python3 scripts/build_lite.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "sync: описания, оценки и отзывы из RuStore"
-          file_pattern: repo.json repo-lite.json icons/s details
+          commit_message: "build: облегчённый каталог, иконки и детали"
+          file_pattern: repo-lite.json icons/s details
