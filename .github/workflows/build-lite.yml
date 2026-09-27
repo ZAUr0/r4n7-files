@@ -31,4 +31,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "build: облегчённый каталог, иконки и детали"
-          file_pattern: repo-lite.json icons/s details
+          file_pattern: repo-lite.json icons/s icons/m shots details

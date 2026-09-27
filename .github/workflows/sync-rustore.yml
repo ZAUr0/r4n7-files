@@ -29,4 +29,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "sync: описания, оценки и отзывы из RuStore"
-          file_pattern: repo.json repo-lite.json icons/s details
+          file_pattern: repo.json repo-lite.json icons/s icons/m shots details
