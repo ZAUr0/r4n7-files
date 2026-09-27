@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T16:38:56Z",
+  "updated_at": "2026-09-27T23:28:42Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260927_baf499",
+      "name": "Асхаб",
+      "rating": 5,
+      "text": "Лучшее приложение 🔥🔥",
+      "date": "2026-09-27",
+      "status": "approved"
+    },
     {
       "id": "review_20260927_f514b2",
       "name": "Ильяс",
