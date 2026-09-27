@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27T04:55:27Z",
+  "updated_at": "2026-09-27T04:56:43Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
     {
@@ -41,14 +41,6 @@
       "rating": 5,
       "text": "👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻",
       "date": "2026-09-25",
-      "status": "approved"
-    },
-    {
-      "id": "review_20260921_9b3793",
-      "name": "Заур",
-      "rating": 4,
-      "text": "Лучшее приложение что могло быть",
-      "date": "2026-09-21",
       "status": "approved"
     }
   ]
