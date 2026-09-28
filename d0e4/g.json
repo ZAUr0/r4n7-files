@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T14:03:44Z",
+  "updated_at": "2026-09-28T22:25:26Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260928_c16583",
+      "name": "Тамерлан",
+      "rating": 5,
+      "text": "Аллахь рез хилл ч1ог1 дик ю Делл рез хуьлил",
+      "date": "2026-09-28",
+      "status": "approved"
+    },
     {
       "id": "review_20260928_e926d5",
       "name": "шархан",
