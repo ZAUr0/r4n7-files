@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T10:29:40Z",
+  "updated_at": "2026-09-28T14:03:44Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20260928_e926d5",
+      "name": "шархан",
+      "rating": 5,
+      "text": "ч|ог| боьрш приложени ю",
+      "date": "2026-09-28",
+      "status": "approved"
+    },
     {
       "id": "review_20260928_11b076",
       "name": "Мансур",
