@@ -1,0 +1,10 @@
+{
+  "file": "c.json",
+  "revision": 4,
+  "badge": 1,
+  "title": "Новости",
+  "notification": {
+    "title": "zStore",
+    "body": "Новая запись в Новостях"
+  }
+}

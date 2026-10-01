@@ -1,12 +1,8 @@
 {
   "revision": 4,
-  "badge": 1,
+  "badge": 0,
   "title": "Новости",
   "subtitle": "Обновления и анонсы zStore",
   "site": "d.html",
-  "notification": {
-    "title": "zStore",
-    "body": "Новая запись в Новостях"
-  },
   "articles": []
 }

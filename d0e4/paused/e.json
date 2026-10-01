@@ -1,0 +1,10 @@
+{
+  "file": "e.json",
+  "revision": 3,
+  "badge": 1,
+  "title": "Франшиза",
+  "notification": {
+    "title": "zStore",
+    "body": "Обновление в разделе Франшиза"
+  }
+}

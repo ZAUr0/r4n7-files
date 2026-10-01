@@ -1,12 +1,8 @@
 {
   "revision": 3,
-  "badge": 1,
+  "badge": 0,
   "title": "Франшиза",
   "subtitle": "Партнёрская программа zStore",
   "site": "f.html",
-  "notification": {
-    "title": "zStore",
-    "body": "Обновление в разделе Франшиза"
-  },
   "articles": []
 }
