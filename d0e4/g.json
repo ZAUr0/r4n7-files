@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T22:25:26Z",
+  "updated_at": "2026-10-01T07:32:38Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261001_f20485",
+      "name": "Элиза",
+      "rating": 5,
+      "text": "Ни как не могла скачать приложение,помогли щас могу все скачать👍🏻 Дела реза хийл Все четко работает",
+      "date": "2026-10-01",
+      "status": "approved"
+    },
     {
       "id": "review_20260928_c16583",
       "name": "Тамерлан",
