@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Обновление zStore</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f2f2f7;
+    --card: #ffffff;
+    --ink: #111318;
+    --muted: #6e7380;
+    --date: #8e8e93;
+    --shadow: 0 1px 1px rgba(16,18,27,0.04), 0 12px 32px rgba(16,18,27,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --ink: #f2f2f7;
+      --muted: #aeaeb2;
+      --date: #8e8e93;
+      --shadow: 0 1px 1px rgba(0,0,0,0.35), 0 16px 36px rgba(0,0,0,0.45);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  article {
+    width: 100%;
+    padding: 52px 20px calc(28px + env(safe-area-inset-bottom));
+  }
+  .date { margin: 0 0 8px; color: var(--date); font-size: 15px; }
+  h1 {
+    margin: 0 0 18px;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+  .hero {
+    height: 180px;
+    border-radius: 24px;
+    margin: 0 0 22px;
+    box-shadow: var(--shadow);
+  }
+  p {
+    margin: 0 0 14px;
+    font-size: 17px;
+    line-height: 1.45;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <article>
+    <div class="hero" style="background:linear-gradient(160deg,#07111f,#123a86)"></div>
+    <p class="date">Сегодня</p>
+    <h1>Обновление zStore</h1>
+    <p>Мы пересобрали главный экран: заголовок, карточки и переходы теперь читаются как одна страница. Нижняя панель осталась на месте, а раздел новостей открывается сразу на всю ширину.</p>
+    <p>Навигация стала короче. Новости больше не спрятаны в настройках — они первая вкладка, и оттуда сразу видно, что изменилось в zStore.</p>
+    <p>Это черновик страницы. Когда текст в репозитории поменяется, приложение подтянет новую версию по id коммита и заменит сохранённую копию.</p>
+  </article>
+</body>
+</html>

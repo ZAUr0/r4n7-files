@@ -3,67 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Новости zStore</title>
+<title>Новости</title>
 <style>
   :root {
-    --bg: #f4f5f7;
+    color-scheme: light dark;
+    --bg: #f2f2f7;
+    --card: #ffffff;
     --ink: #111318;
     --muted: #6e7380;
-    --accent: #0088fe;
+    --date: #8e8e93;
+    --chev: #c4c4c8;
+    --shadow: 0 1px 1px rgba(16,18,27,0.04), 0 12px 32px rgba(16,18,27,0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --ink: #f2f2f7;
+      --muted: #aeaeb2;
+      --date: #8e8e93;
+      --chev: #636366;
+      --shadow: 0 1px 1px rgba(0,0,0,0.35), 0 16px 36px rgba(0,0,0,0.45);
+    }
   }
   * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    min-height: 100%;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
     -webkit-text-size-adjust: 100%;
+    min-height: 100%;
   }
-  .wrap {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 48px 28px calc(48px + env(safe-area-inset-bottom));
-  }
-  .card {
+  .page {
     width: 100%;
-    max-width: 420px;
-    text-align: center;
-  }
-  .badge {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 650;
-    letter-spacing: 0.02em;
-    color: var(--accent);
-    background: rgba(0, 136, 254, 0.12);
-    border-radius: 999px;
-    padding: 6px 12px;
-    margin-bottom: 18px;
+    padding: 8px 16px calc(20px + env(safe-area-inset-bottom));
   }
   h1 {
-    margin: 0 0 10px;
-    font-size: 28px;
-    line-height: 1.15;
+    margin: 8px 4px 16px;
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.6px;
     font-weight: 700;
   }
-  p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.45;
+  a.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 12px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--card);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    -webkit-tap-highlight-color: transparent;
+  }
+  a.card:active { transform: scale(0.985); }
+  .art {
+    width: 68px;
+    height: 68px;
+    flex: none;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+  }
+  .copy { min-width: 0; flex: 1; }
+  .copy strong {
+    display: block;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+  }
+  .copy .date {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 1.25;
+    color: var(--date);
+    font-weight: 400;
+  }
+  .copy p {
+    margin: 4px 0 0;
+    font-size: 15px;
+    line-height: 1.3;
     color: var(--muted);
+    font-weight: 400;
+  }
+  .chev {
+    flex: none;
+    color: var(--chev);
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 2px;
   }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="badge">Новости</div>
-      <h1>Скоро появится</h1>
-      <p>Раздел временно пуст. Скоро здесь будут обновления и анонсы zStore.</p>
-    </div>
-  </div>
+  <main class="page">
+    <h1>Новости</h1>
+    
+    <a class="card" href="n/01.html">
+      <div class="art" style="background:linear-gradient(160deg,#07111f,#123a86)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">Z</text></svg></div>
+      <div class="copy">
+        <strong>Обновление zStore</strong>
+        <span class="date">Сегодня</span>
+        <p>Обновили интерфейс zStore и сделали навигацию ещё удобнее.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/02.html">
+      <div class="art" style="background:linear-gradient(160deg,#eef3ff,#d9e6ff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">◎</text></svg></div>
+      <div class="copy">
+        <strong>Новые приложения</strong>
+        <span class="date">30 сентября</span>
+        <p>В каталог zStore добавлены новые приложения и обновлены существующие версии.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/03.html">
+      <div class="art" style="background:linear-gradient(160deg,#7eb6ff,#2f7cf6)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">⚙</text></svg></div>
+      <div class="copy">
+        <strong>Обновление сервисов</strong>
+        <span class="date">28 сентября</span>
+        <p>Мы обновили сервисы zStore и улучшили стабильность работы приложения.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/04.html">
+      <div class="art" style="background:linear-gradient(180deg,#5aa6ff,#1f6fe8)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">A</text></svg></div>
+      <div class="copy">
+        <strong>Новые функции</strong>
+        <span class="date">25 сентября</span>
+        <p>Добавлена поддержка новых возможностей и улучшена производительность.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/05.html">
+      <div class="art" style="background:linear-gradient(160deg,#07111f,#163f9a)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">✓</text></svg></div>
+      <div class="copy">
+        <strong>Повышение безопасности</strong>
+        <span class="date">21 сентября</span>
+        <p>Улучшили защиту данных и стабильность работы zStore.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/06.html">
+      <div class="art" style="background:linear-gradient(160deg,#e8fff4,#b7f0d4)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">□</text></svg></div>
+      <div class="copy">
+        <strong>Библиотека</strong>
+        <span class="date">18 сентября</span>
+        <p>Подписанные приложения проще найти, а установка не сбрасывает уже готовые копии.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/07.html">
+      <div class="art" style="background:linear-gradient(160deg,#fff4e5,#ffd7a8)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">↓</text></svg></div>
+      <div class="copy">
+        <strong>Установка</strong>
+        <span class="date">14 сентября</span>
+        <p>Установка приложений идёт тем же путём: загрузка, подпись и локальный сервер.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/08.html">
+      <div class="art" style="background:linear-gradient(160deg,#f3e9ff,#d7c4ff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">C</text></svg></div>
+      <div class="copy">
+        <strong>Сертификаты</strong>
+        <span class="date">10 сентября</span>
+        <p>Сертификат по-прежнему подхватывается при первом запуске из сборки приложения.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/09.html">
+      <div class="art" style="background:linear-gradient(160deg,#e7fbff,#b9ecff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">→</text></svg></div>
+      <div class="copy">
+        <strong>Загрузка</strong>
+        <span class="date">6 сентября</span>
+        <p>Повторные запросы каталога не качают то, что уже совпало с последним коммитом.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+    <a class="card" href="n/10.html">
+      <div class="art" style="background:linear-gradient(160deg,#111318,#3a3a3c)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">•</text></svg></div>
+      <div class="copy">
+        <strong>Что дальше</strong>
+        <span class="date">2 сентября</span>
+        <p>Дальше новости правятся в репозитории: карточка и страница обновятся вместе.</p>
+      </div>
+      <div class="chev">›</div>
+    </a>
+  </main>
 </body>
 </html>
