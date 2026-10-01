@@ -15122,23 +15122,23 @@
       "versions": [
         {
           "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/2e75cc37.ipa",
-          "size": 275547376,
+          "size": 275444112,
           "version": "14.4.0",
           "buildVersion": "66880",
-          "date": "2026-09-18T00:00:00Z",
+          "date": "2026-10-01T00:00:00Z",
           "minOSVersion": "16.0",
-          "localizedDescription": "Элементарно, Ватсон. Видите это объявление? Оно говорит, что в приложении исправлены недочёты. Улики налицо — всё работает без сучка и задоринки. Можно обновляться."
+          "localizedDescription": "Исправлен вылет при входе."
         }
       ],
       "version": "14.4.0",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 275547376,
+      "versionDate": "2026-10-01T00:00:00Z",
+      "size": 275444112,
       "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/2e75cc37.ipa",
       "rating": 4.19,
       "ratingCount": 17926,
       "downloads": 12000000,
       "downloadsText": "12 млн +",
-      "versionDescription": "Элементарно, Ватсон. Видите это объявление? Оно говорит, что в приложении исправлены недочёты. Улики налицо — всё работает без сучка и задоринки. Можно обновляться.",
+      "versionDescription": "Исправлен вылет при входе.",
       "screenshotURLs": [
         "https://static.rustore.ru/2026/8/27/00/apk/1169855/content/SCREENSHOT/c7423ba0-f1a8-4974-be12-b97d903bbb1c.jpg",
         "https://static.rustore.ru/2026/8/27/0d/apk/1169855/content/SCREENSHOT/8e3e41e8-2f0e-416d-8217-c40aac1c2297.jpg",
