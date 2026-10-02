@@ -1,0 +1,215 @@
+/* О приложении — только дизайн. Контент правьте в index.html */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f2f2f7;
+  --card: #ffffff;
+  --ink: #111318;
+  --muted: #8e8e93;
+  --label: #6e7380;
+  --sep: rgba(60, 60, 67, 0.29);
+  --accent: #0088fe;
+  --chev: #c7c7cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --card: #1c1c1e;
+    --ink: #f2f2f7;
+    --muted: #8e8e93;
+    --label: #aeaeb2;
+    --sep: rgba(84, 84, 88, 0.65);
+    --chev: #636366;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+  -webkit-text-size-adjust: auto;
+  min-height: 100%;
+}
+
+.page {
+  width: 100%;
+  padding: 52px 20px calc(40px + env(safe-area-inset-bottom));
+}
+
+.page-header {
+  margin: 0 0 14px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+}
+
+.page-header .subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.card + .section-label,
+.card + .card,
+.section-label + .card {
+  /* spacing via margins below */
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.identity img.app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 0.8px solid var(--sep);
+  background: #dfe6f3;
+}
+
+.identity .name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.identity .version {
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.section-label {
+  margin: 0 0 8px 4px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--label);
+}
+
+a.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+a.row:active { transform: scale(0.97); }
+
+a.row.channel {
+  padding: 11px 14px;
+  margin-bottom: 28px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.6px solid var(--sep);
+  background: #dfe6f3;
+  flex: none;
+}
+
+.row .copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.row .copy strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.row .copy span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.row .glyph {
+  flex: none;
+  color: var(--accent);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.row .glyph.plane {
+  font-size: 13px;
+}
+
+.row .chev {
+  flex: none;
+  color: var(--chev);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.story {
+  padding: 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.story strong {
+  font-weight: 700;
+}
+
+.icon-bubble {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  color: var(--accent);
+  font-size: 15px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.row { transition: none; }
+  a.row:active { transform: none; }
+}
+
+@media (min-width: 768px) {
+  .page { padding-left: 40px; padding-right: 40px; }
+  .page-header h1 { font-size: 40px; }
+  .page-header .subtitle { font-size: 17px; }
+}
