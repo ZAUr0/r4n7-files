@@ -41,9 +41,15 @@
     font-weight: 700;
   }
   .hero {
-    height: 180px;
-    border-radius: 24px;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1170 / 450;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 28px;
     margin: 0 0 22px;
+    background: #dfe6f3;
   }
   p {
     margin: 0 0 14px;
@@ -55,7 +61,7 @@
 </head>
 <body>
   <article>
-    <div class="hero" style="background:linear-gradient(160deg,#fff4e5,#ffd7a8)"></div>
+    <img class="hero" src="../covers/07.png" alt="" width="1170" height="450" decoding="async">
     <p class="date">14 сентября</p>
     <h1>Установка</h1>
     <p>Схема установки не менялась. Новость нужна, чтобы коротко сказать об этом людям, которые ждут правки в разделе новостей.</p>

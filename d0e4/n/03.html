@@ -41,9 +41,15 @@
     font-weight: 700;
   }
   .hero {
-    height: 180px;
-    border-radius: 24px;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1170 / 450;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 28px;
     margin: 0 0 22px;
+    background: #dfe6f3;
   }
   p {
     margin: 0 0 14px;
@@ -55,7 +61,7 @@
 </head>
 <body>
   <article>
-    <div class="hero" style="background:linear-gradient(160deg,#7eb6ff,#2f7cf6)"></div>
+    <img class="hero" src="../covers/03.png" alt="" width="1170" height="450" decoding="async">
     <p class="date">28 сентября</p>
     <h1>Обновление сервисов</h1>
     <p>Сервисы получили более спокойную загрузку: пустой ответ больше не ломает экран, а повторный заход показывает последнюю сохранённую версию.</p>

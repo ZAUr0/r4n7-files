@@ -41,9 +41,15 @@
     font-weight: 700;
   }
   .hero {
-    height: 180px;
-    border-radius: 24px;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1170 / 450;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 28px;
     margin: 0 0 22px;
+    background: #dfe6f3;
   }
   p {
     margin: 0 0 14px;
@@ -55,7 +61,7 @@
 </head>
 <body>
   <article>
-    <div class="hero" style="background:linear-gradient(160deg,#07111f,#163f9a)"></div>
+    <img class="hero" src="../covers/05.png" alt="" width="1170" height="450" decoding="async">
     <p class="date">21 сентября</p>
     <h1>Повышение безопасности</h1>
     <p>Страницы новостей открываются внутри приложения. Внешняя ссылка по-прежнему уходит в Safari, а страницы из каталога остаются здесь.</p>
