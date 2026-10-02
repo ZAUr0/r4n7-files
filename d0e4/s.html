@@ -68,6 +68,20 @@
   </main>
 
   <script>
+  window.zstoreFitFeed = function () {
+    var h = window.innerHeight || document.documentElement.clientHeight;
+    document.documentElement.style.height = h + 'px';
+    document.body.style.height = h + 'px';
+    var page = document.querySelector('body.feed .page');
+    if (page) page.style.height = h + 'px';
+  };
+  window.addEventListener('load', window.zstoreFitFeed);
+  window.addEventListener('resize', window.zstoreFitFeed);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', window.zstoreFitFeed);
+  }
+  window.zstoreFitFeed();
+
   (function () {
     var search = document.getElementById('search');
     var searchBox = document.getElementById('searchBox');

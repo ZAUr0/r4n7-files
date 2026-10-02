@@ -108,11 +108,12 @@ body.feed .page {
   display: flex;
   align-items: center;
   gap: 11px;
-  height: 46px;
-  padding: 0 14px;
-  border-radius: 14px;
+  width: 100%;
+  height: var(--search-h, 46px);
+  padding: 0 var(--search-pad-h, 14px);
+  border-radius: var(--search-radius, 14px);
   background: var(--z-surface);
-  border: 0.8px solid var(--z-stroke-search);
+  border: var(--search-border-w, 0.8px) solid var(--z-stroke-search);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
@@ -166,8 +167,8 @@ body.feed .page {
 .chips {
   flex: none;
   display: flex;
-  gap: 4px;
-  padding: var(--chip-row-top) var(--page-inset-h) var(--filters-bottom);
+  gap: var(--chip-gap, 4px);
+  padding: var(--chip-row-top, 9px) var(--page-inset-h) var(--filters-bottom);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -179,13 +180,13 @@ body.feed .page {
 .chip {
   position: relative;
   flex: none;
-  height: 34px;
-  padding: 0 10px;
+  height: var(--chip-h, 34px);
+  padding: 0 var(--chip-pad-h, 10px);
   border: 0;
   border-radius: 999px;
   background: var(--z-chip);
   color: var(--ink);
-  font: 500 14px/34px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font: 500 var(--chip-font, 14px)/var(--chip-h, 34px) -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -217,14 +218,16 @@ body.feed .page {
 .list-shell {
   flex: 1 1 0;
   min-height: 0;
+  width: auto;
   margin: 0 var(--list-inset-h) var(--list-inset-b);
   border-radius: var(--list-radius);
   background: var(--z-surface);
-  border: 0.6px solid var(--z-stroke-list);
+  border: var(--list-border-w, 0.6px) solid var(--z-stroke-list);
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 .row {
