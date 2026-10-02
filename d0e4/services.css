@@ -113,7 +113,7 @@ body.feed .page {
   padding: 0 var(--search-pad-h, 14px);
   border-radius: var(--search-radius, 14px);
   background: var(--z-surface);
-  border: var(--search-border-w, 0.8px) solid var(--z-stroke-search);
+  border: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
@@ -222,7 +222,7 @@ body.feed .page {
   margin: 0 var(--list-inset-h) var(--list-inset-b);
   border-radius: var(--list-radius);
   background: var(--z-surface);
-  border: var(--list-border-w, 0.6px) solid var(--z-stroke-list);
+  border: 0;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
