@@ -10,10 +10,10 @@
     --bg: #f2f2f7;
     --card: #ffffff;
     --ink: #111318;
-    --muted: #6e7380;
+    --muted: #8e8e93;
     --date: #8e8e93;
-    --chev: #c4c4c8;
-    --shadow: 0 1px 1px rgba(16,18,27,0.04), 0 12px 32px rgba(16,18,27,0.10);
+    --chev: #c7c7cc;
+    --shadow: 0 1px 2px rgba(16,18,27,0.04), 0 14px 36px rgba(16,18,27,0.10);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -23,7 +23,7 @@
       --muted: #aeaeb2;
       --date: #8e8e93;
       --chev: #636366;
-      --shadow: 0 1px 1px rgba(0,0,0,0.35), 0 16px 36px rgba(0,0,0,0.45);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 16px 40px rgba(0,0,0,0.5);
     }
   }
   * { box-sizing: border-box; }
@@ -35,163 +35,438 @@
   }
   .page {
     width: 100%;
-    padding: 8px 16px calc(20px + env(safe-area-inset-bottom));
+    padding: 4px 16px calc(28px + env(safe-area-inset-bottom));
   }
   h1 {
-    margin: 8px 4px 16px;
+    margin: 4px 4px 14px;
     font-size: 34px;
     line-height: 1.05;
     letter-spacing: -0.6px;
     font-weight: 700;
   }
   a.card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: block;
     width: 100%;
-    margin: 0 0 12px;
-    padding: 12px;
+    margin: 0 0 16px;
     text-decoration: none;
     color: inherit;
     background: var(--card);
-    border-radius: 22px;
+    border-radius: 28px;
     box-shadow: var(--shadow);
+    overflow: hidden;
     -webkit-tap-highlight-color: transparent;
+    transition: transform 120ms ease-out;
   }
   a.card:active { transform: scale(0.985); }
-  .art {
-    width: 68px;
-    height: 68px;
-    flex: none;
-    border-radius: 16px;
-    display: grid;
-    place-items: center;
+  .hero {
+    position: relative;
+    height: 188px;
+    overflow: hidden;
+  }
+  .hero svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .body {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 16px 18px;
   }
   .copy { min-width: 0; flex: 1; }
   .copy strong {
     display: block;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.35px;
+    color: var(--ink);
   }
   .copy .date {
     display: block;
-    margin-top: 2px;
-    font-size: 13px;
+    margin-top: 3px;
+    font-size: 14px;
     line-height: 1.25;
     color: var(--date);
     font-weight: 400;
   }
   .copy p {
-    margin: 4px 0 0;
+    margin: 6px 0 0;
     font-size: 15px;
-    line-height: 1.3;
+    line-height: 1.35;
     color: var(--muted);
     font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .chev {
     flex: none;
     color: var(--chev);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
     padding-right: 2px;
+    align-self: center;
   }
 </style>
 </head>
 <body>
   <main class="page">
     <h1>Новости</h1>
-    
+
     <a class="card" href="n/01.html">
-      <div class="art" style="background:linear-gradient(160deg,#07111f,#123a86)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">Z</text></svg></div>
-      <div class="copy">
-        <strong>Обновление zStore</strong>
-        <span class="date">Сегодня</span>
-        <p>Обновили интерфейс zStore и сделали навигацию ещё удобнее.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#07111f"/>
+              <stop offset="55%" stop-color="#0d2a63"/>
+              <stop offset="100%" stop-color="#1a56c8"/>
+            </linearGradient>
+            <radialGradient id="glow1" cx="50%" cy="42%" r="42%">
+              <stop offset="0%" stop-color="#5aa8ff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#5aa8ff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="glass1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g1)"/>
+          <circle cx="195" cy="78" r="90" fill="url(#glow1)"/>
+          <ellipse cx="110" cy="150" rx="70" ry="18" fill="#3d8bff" opacity="0.18"/>
+          <ellipse cx="280" cy="40" rx="50" ry="14" fill="#7ec0ff" opacity="0.16"/>
+          <g transform="translate(195 86)">
+            <ellipse cx="0" cy="42" rx="54" ry="10" fill="#000" opacity="0.25"/>
+            <rect x="-48" y="-48" width="96" height="96" rx="26" fill="url(#glass1)" stroke="#fff" stroke-opacity="0.35"/>
+            <rect x="-40" y="-40" width="80" height="80" rx="22" fill="#0a2f7a" opacity="0.55"/>
+            <text x="0" y="14" text-anchor="middle" font-size="54" font-family="-apple-system, system-ui" font-weight="800" fill="#5eb1ff">Z</text>
+          </g>
+          <circle cx="78" cy="56" r="22" fill="none" stroke="#9fd0ff" stroke-opacity="0.35" stroke-width="2"/>
+          <circle cx="312" cy="120" r="28" fill="none" stroke="#9fd0ff" stroke-opacity="0.28" stroke-width="2"/>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Обновление zStore</strong>
+          <span class="date">Сегодня</span>
+          <p>Обновили интерфейс zStore и сделали навигацию ещё удобнее.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/02.html">
-      <div class="art" style="background:linear-gradient(160deg,#eef3ff,#d9e6ff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">◎</text></svg></div>
-      <div class="copy">
-        <strong>Новые приложения</strong>
-        <span class="date">30 сентября</span>
-        <p>В каталог zStore добавлены новые приложения и обновлены существующие версии.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#eef4ff"/>
+              <stop offset="100%" stop-color="#c9dcff"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g2)"/>
+          <circle cx="70" cy="150" r="60" fill="#ffffff" opacity="0.45"/>
+          <circle cx="330" cy="30" r="50" fill="#ffffff" opacity="0.35"/>
+          <!-- app cluster -->
+          <g transform="translate(108 48)">
+            <rect width="72" height="72" rx="18" fill="#0a84ff"/>
+            <text x="36" y="48" text-anchor="middle" font-size="34" fill="#fff" font-family="-apple-system" font-weight="700">A</text>
+          </g>
+          <g transform="translate(198 38)">
+            <rect width="72" height="72" rx="18" fill="#25D366"/>
+            <circle cx="36" cy="36" r="18" fill="none" stroke="#fff" stroke-width="5"/>
+            <path d="M28 42c6 8 16 8 22 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <g transform="translate(148 98)">
+            <rect width="64" height="64" rx="16" fill="#FF0000"/>
+            <polygon points="26,18 50,32 26,46" fill="#fff"/>
+          </g>
+          <g transform="translate(228 108)">
+            <rect width="56" height="56" rx="14" fill="#111"/>
+            <circle cx="28" cy="28" r="12" fill="#25F4EE"/>
+            <circle cx="28" cy="28" r="6" fill="#FE2C55"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Новые приложения</strong>
+          <span class="date">30 сентября</span>
+          <p>В каталог zStore добавлены новые приложения и обновлены существующие версии.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/03.html">
-      <div class="art" style="background:linear-gradient(160deg,#7eb6ff,#2f7cf6)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">⚙</text></svg></div>
-      <div class="copy">
-        <strong>Обновление сервисов</strong>
-        <span class="date">28 сентября</span>
-        <p>Мы обновили сервисы zStore и улучшили стабильность работы приложения.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7eb6ff"/>
+              <stop offset="100%" stop-color="#2f7cf6"/>
+            </linearGradient>
+            <radialGradient id="glow3" cx="50%" cy="45%" r="40%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g3)"/>
+          <circle cx="195" cy="84" r="80" fill="url(#glow3)"/>
+          <g transform="translate(195 90)">
+            <circle cx="0" cy="0" r="46" fill="#f4f7ff" opacity="0.95"/>
+            <circle cx="0" cy="0" r="28" fill="none" stroke="#5b6b86" stroke-width="8"/>
+            <circle cx="0" cy="0" r="10" fill="#5b6b86"/>
+            <g fill="#5b6b86">
+              <rect x="-6" y="-52" width="12" height="16" rx="3"/>
+              <rect x="-6" y="36" width="12" height="16" rx="3"/>
+              <rect x="-52" y="-6" width="16" height="12" rx="3"/>
+              <rect x="36" y="-6" width="16" height="12" rx="3"/>
+              <rect x="-40" y="-40" width="14" height="14" rx="3" transform="rotate(45 -33 -33)"/>
+              <rect x="26" y="-40" width="14" height="14" rx="3" transform="rotate(45 33 -33)"/>
+              <rect x="-40" y="26" width="14" height="14" rx="3" transform="rotate(45 -33 33)"/>
+              <rect x="26" y="26" width="14" height="14" rx="3" transform="rotate(45 33 33)"/>
+            </g>
+          </g>
+          <circle cx="70" cy="50" r="26" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+          <circle cx="320" cy="130" r="34" fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2"/>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Обновление сервисов</strong>
+          <span class="date">28 сентября</span>
+          <p>Мы обновили сервисы zStore и улучшили стабильность работы приложения.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/04.html">
-      <div class="art" style="background:linear-gradient(180deg,#5aa6ff,#1f6fe8)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">A</text></svg></div>
-      <div class="copy">
-        <strong>Новые функции</strong>
-        <span class="date">25 сентября</span>
-        <p>Добавлена поддержка новых возможностей и улучшена производительность.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#5aa6ff"/>
+              <stop offset="100%" stop-color="#1f6fe8"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g4)"/>
+          <ellipse cx="195" cy="170" rx="120" ry="20" fill="#000" opacity="0.15"/>
+          <g transform="translate(148 28)">
+            <rect x="8" y="0" width="78" height="140" rx="16" fill="#0b1f44" opacity="0.35"/>
+            <rect x="14" y="10" width="66" height="112" rx="8" fill="#eaf3ff"/>
+            <rect x="22" y="22" width="50" height="8" rx="4" fill="#8eb7ff"/>
+            <rect x="22" y="38" width="38" height="8" rx="4" fill="#b9d3ff"/>
+            <rect x="22" y="54" width="44" height="8" rx="4" fill="#b9d3ff"/>
+            <path d="M92 48 L118 36 L118 60 Z" fill="#ffe566"/>
+            <path d="M-8 78 L18 66 L18 90 Z" fill="#ffe566" opacity="0.85"/>
+            <path d="M96 100 L122 88 L122 112 Z" fill="#ffe566" opacity="0.75"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Новые функции</strong>
+          <span class="date">25 сентября</span>
+          <p>Добавлена поддержка новых возможностей и улучшена производительность.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/05.html">
-      <div class="art" style="background:linear-gradient(160deg,#07111f,#163f9a)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">✓</text></svg></div>
-      <div class="copy">
-        <strong>Повышение безопасности</strong>
-        <span class="date">21 сентября</span>
-        <p>Улучшили защиту данных и стабильность работы zStore.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#07111f"/>
+              <stop offset="100%" stop-color="#163f9a"/>
+            </linearGradient>
+            <linearGradient id="tile5" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#d9e8ff" stop-opacity="0.9"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g5)"/>
+          <circle cx="195" cy="86" r="70" fill="#4f9fff" opacity="0.22"/>
+          <g transform="translate(147 42)">
+            <rect width="96" height="96" rx="28" fill="url(#tile5)"/>
+            <path d="M30 50 L44 64 L70 36" fill="none" stroke="#1f6fe8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <circle cx="86" cy="48" r="20" fill="none" stroke="#9fd0ff" stroke-opacity="0.3" stroke-width="2"/>
+          <circle cx="310" cy="128" r="26" fill="none" stroke="#9fd0ff" stroke-opacity="0.25" stroke-width="2"/>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Повышение безопасности</strong>
+          <span class="date">21 сентября</span>
+          <p>Улучшили защиту данных и стабильность работы zStore.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/06.html">
-      <div class="art" style="background:linear-gradient(160deg,#e8fff4,#b7f0d4)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">□</text></svg></div>
-      <div class="copy">
-        <strong>Библиотека</strong>
-        <span class="date">18 сентября</span>
-        <p>Подписанные приложения проще найти, а установка не сбрасывает уже готовые копии.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e8fff4"/>
+              <stop offset="100%" stop-color="#9fe8c8"/>
+            </linearGradient>
+            <linearGradient id="tile6" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#6fd9a8" stop-opacity="0.75"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g6)"/>
+          <g transform="translate(120 36)">
+            <rect x="40" y="0" width="88" height="88" rx="22" fill="url(#tile6)" transform="rotate(8 84 44)"/>
+            <rect x="10" y="18" width="88" height="88" rx="22" fill="url(#tile6)" transform="rotate(-6 54 62)"/>
+            <rect x="28" y="34" width="88" height="88" rx="22" fill="#ffffff" opacity="0.92"/>
+            <rect x="44" y="52" width="56" height="8" rx="4" fill="#34c759" opacity="0.55"/>
+            <rect x="44" y="68" width="40" height="8" rx="4" fill="#34c759" opacity="0.35"/>
+            <rect x="44" y="84" width="48" height="8" rx="4" fill="#34c759" opacity="0.28"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Библиотека</strong>
+          <span class="date">18 сентября</span>
+          <p>Подписанные приложения проще найти, а установка не сбрасывает уже готовые копии.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/07.html">
-      <div class="art" style="background:linear-gradient(160deg,#fff4e5,#ffd7a8)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">↓</text></svg></div>
-      <div class="copy">
-        <strong>Установка</strong>
-        <span class="date">14 сентября</span>
-        <p>Установка приложений идёт тем же путём: загрузка, подпись и локальный сервер.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g7" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff4e5"/>
+              <stop offset="100%" stop-color="#ffd7a8"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g7)"/>
+          <g transform="translate(155 40)">
+            <rect x="18" y="0" width="64" height="78" rx="14" fill="#fff" opacity="0.9"/>
+            <rect x="28" y="12" width="44" height="6" rx="3" fill="#ffb340" opacity="0.5"/>
+            <rect x="28" y="26" width="32" height="6" rx="3" fill="#ffb340" opacity="0.35"/>
+            <path d="M50 96 v36" stroke="#ff9500" stroke-width="8" stroke-linecap="round"/>
+            <path d="M34 118 L50 138 L66 118" fill="none" stroke="#ff9500" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="20" y="138" width="60" height="14" rx="7" fill="#ff9500" opacity="0.85"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Установка</strong>
+          <span class="date">14 сентября</span>
+          <p>Установка приложений идёт тем же путём: загрузка, подпись и локальный сервер.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/08.html">
-      <div class="art" style="background:linear-gradient(160deg,#f3e9ff,#d7c4ff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">C</text></svg></div>
-      <div class="copy">
-        <strong>Сертификаты</strong>
-        <span class="date">10 сентября</span>
-        <p>Сертификат по-прежнему подхватывается при первом запуске из сборки приложения.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g8" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f3e9ff"/>
+              <stop offset="100%" stop-color="#d7c4ff"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g8)"/>
+          <g transform="translate(145 34)">
+            <rect x="20" y="20" width="90" height="110" rx="12" fill="#fff" opacity="0.9"/>
+            <rect x="34" y="40" width="62" height="8" rx="4" fill="#af52de" opacity="0.45"/>
+            <rect x="34" y="56" width="48" height="8" rx="4" fill="#af52de" opacity="0.3"/>
+            <circle cx="65" cy="100" r="18" fill="#af52de" opacity="0.85"/>
+            <path d="M65 90 v12 M59 102 h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <rect x="0" y="0" width="50" height="36" rx="8" fill="#ffffff" opacity="0.95" transform="rotate(-18 25 18)"/>
+            <path d="M12 18 h26 M12 26 h18" stroke="#af52de" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Сертификаты</strong>
+          <span class="date">10 сентября</span>
+          <p>Сертификат по-прежнему подхватывается при первом запуске из сборки приложения.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/09.html">
-      <div class="art" style="background:linear-gradient(160deg,#e7fbff,#b9ecff)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">→</text></svg></div>
-      <div class="copy">
-        <strong>Загрузка</strong>
-        <span class="date">6 сентября</span>
-        <p>Повторные запросы каталога не качают то, что уже совпало с последним коммитом.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g9" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e7fbff"/>
+              <stop offset="100%" stop-color="#b9ecff"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g9)"/>
+          <g transform="translate(120 54)">
+            <rect x="0" y="40" width="150" height="18" rx="9" fill="#64d2ff" opacity="0.35"/>
+            <rect x="0" y="40" width="96" height="18" rx="9" fill="#00c7be"/>
+            <circle cx="96" cy="49" r="22" fill="#fff" stroke="#00c7be" stroke-width="4"/>
+            <path d="M88 49 L94 55 L108 41" fill="none" stroke="#00c7be" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 20 L40 8 L60 20" fill="none" stroke="#5ac8fa" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M40 8 v28" stroke="#5ac8fa" stroke-width="6" stroke-linecap="round"/>
+          </g>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Загрузка</strong>
+          <span class="date">6 сентября</span>
+          <p>Повторные запросы каталога не качают то, что уже совпало с последним коммитом.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
+
     <a class="card" href="n/10.html">
-      <div class="art" style="background:linear-gradient(160deg,#111318,#3a3a3c)"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><text x="14" y="19" text-anchor="middle" font-size="16" font-family="-apple-system" font-weight="700" fill="white">•</text></svg></div>
-      <div class="copy">
-        <strong>Что дальше</strong>
-        <span class="date">2 сентября</span>
-        <p>Дальше новости правятся в репозитории: карточка и страница обновятся вместе.</p>
+      <div class="hero" aria-hidden="true">
+        <svg viewBox="0 0 390 188" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g10" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#111318"/>
+              <stop offset="100%" stop-color="#3a3a3c"/>
+            </linearGradient>
+          </defs>
+          <rect width="390" height="188" fill="url(#g10)"/>
+          <circle cx="195" cy="88" r="54" fill="#5e5ce6" opacity="0.35"/>
+          <g transform="translate(195 88)">
+            <circle cx="0" cy="0" r="34" fill="#2c2c2e"/>
+            <circle cx="0" cy="0" r="22" fill="none" stroke="#64d2ff" stroke-width="4" stroke-dasharray="40 20" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="6" fill="#64d2ff"/>
+          </g>
+          <circle cx="90" cy="50" r="16" fill="#64d2ff" opacity="0.25"/>
+          <circle cx="300" cy="130" r="20" fill="#bf5af2" opacity="0.25"/>
+        </svg>
       </div>
-      <div class="chev">›</div>
+      <div class="body">
+        <div class="copy">
+          <strong>Что дальше</strong>
+          <span class="date">2 сентября</span>
+          <p>Дальше новости правятся в репозитории: карточка и страница обновятся вместе.</p>
+        </div>
+        <div class="chev">›</div>
+      </div>
     </a>
   </main>
 </body>
