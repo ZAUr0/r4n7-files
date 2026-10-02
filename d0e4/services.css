@@ -22,8 +22,6 @@
   --z-bg: #ffffff;
   --z-surface: #f2f2f7;
   --z-chip: #ffffff;
-  --z-stroke-search: rgba(60, 60, 67, 0.29);
-  --z-stroke-list: rgba(60, 60, 67, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
