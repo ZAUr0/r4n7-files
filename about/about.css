@@ -53,8 +53,6 @@ body {
 
 .page-header {
   margin: 0 4px 16px;
-  /* место под круглую кнопку назад слева */
-  padding-left: 44px;
 }
 
 .page-header h1 {
