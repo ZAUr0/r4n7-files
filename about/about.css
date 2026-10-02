@@ -46,8 +46,8 @@ body {
 .page {
   width: 100%;
   min-height: 100%;
-  /* Те же 20pt слева, что у вкладок (ZStorePageHeader / карточки) */
-  padding: 8px 20px calc(20px + env(safe-area-inset-bottom));
+  /* Как Новости / zStore / Библиотека / Сервисы: safe area + 8pt, слева 20pt */
+  padding: calc(8px + env(safe-area-inset-top, 0px)) 20px calc(20px + env(safe-area-inset-bottom));
   overflow: hidden;
 }
 
