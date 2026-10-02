@@ -46,13 +46,13 @@ body {
 .page {
   width: 100%;
   min-height: 100%;
-  /* Как у Новости / zStore / Библиотека / Сервисы: сразу под статус-баром */
-  padding: calc(8px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
+  /* Те же 20pt слева, что у вкладок (ZStorePageHeader / карточки) */
+  padding: 8px 20px calc(20px + env(safe-area-inset-bottom));
   overflow: hidden;
 }
 
 .page-header {
-  margin: 0 4px 16px;
+  margin: 0 0 16px;
 }
 
 .page-header h1 {
