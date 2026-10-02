@@ -1,3 +1,20 @@
+
+/* No select / copy / double-tap zoom */
+html, body, * {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+input, textarea {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
 /* zStore — страница сервиса (s/*.html). Список в приложении. */
 
 :root {
