@@ -30,17 +30,24 @@ html, body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
   -webkit-text-size-adjust: auto;
-  min-height: 100%;
 }
 
 .page {
   width: 100%;
-  padding: 52px 20px calc(40px + env(safe-area-inset-bottom));
+  min-height: 100%;
+  padding: calc(10px + env(safe-area-inset-top) + 44px) 20px calc(20px + env(safe-area-inset-bottom));
+  overflow: hidden;
 }
 
 .page-header {
