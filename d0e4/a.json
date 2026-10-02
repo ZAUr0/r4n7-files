@@ -1,13 +1,8 @@
 {
   "name": "ZStore Services",
   "subtitle": "Нужные для вашего айфон сервисы",
-  "revision": 13,
-  "badge": 1,
-  "site": "s.html",
-  "notification": {
-    "title": "zStore",
-    "body": "Обновление в разделе Сервисы"
-  },
+  "revision": 14,
+  "badge": 0,
   "services": [
     {
       "id": "vaynah-vpn",
