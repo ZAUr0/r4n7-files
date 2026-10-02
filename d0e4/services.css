@@ -1,74 +1,83 @@
-/* zStore Сервисы — как zStore / Библиотека
-   Page: systemBackground
-   Search/List: secondarySystemBackground (ZStoreGlassFill)
-   Chips: secondarySystemGroupedBackground */
+/* zStore Сервисы — layout как zStore / Библиотека.
+   Цвета поиска и контейнера: --z-* из приложения (ServicesFeedTheme). */
 
 :root {
   color-scheme: light dark;
-  --bg: #ffffff;
-  --surface: #f2f2f7;
-  --chip: #ffffff;
-  --chip-sel: rgba(0, 136, 254, 0.12);
+  --list-inset-h: 16px;
+  --list-inset-b: 24px;
+  --list-radius: 24px;
+  --page-inset-h: 20px;
+  --header-bottom: 12px;
+  --search-bottom: 6px;
+  --filters-bottom: 6px;
+  --chip-row-top: 7px;
   --ink: #000000;
   --muted: #8e8e93;
   --sep: rgba(60, 60, 67, 0.29);
   --accent: #0088fe;
-  --stroke-search: rgba(60, 60, 67, 0.29);
-  --stroke-list: rgba(60, 60, 67, 0.12);
+  --chip-sel: rgba(0, 136, 254, 0.12);
   --detail-bg: #ffffff;
   --info-card: #f2f2f7;
+  /* Fallbacks if theme block missing */
+  --z-bg: #ffffff;
+  --z-surface: #f2f2f7;
+  --z-chip: #ffffff;
+  --z-stroke-search: rgba(60, 60, 67, 0.29);
+  --z-stroke-list: rgba(60, 60, 67, 0.12);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #000000;
-    --surface: #1c1c1e;
-    --chip: #1c1c1e;
     --ink: #ffffff;
     --muted: #8e8e93;
     --sep: rgba(84, 84, 88, 0.65);
-    --stroke-search: rgba(84, 84, 88, 0.65);
-    --stroke-list: rgba(84, 84, 88, 0.35);
     --detail-bg: #000000;
     --info-card: #1c1c1e;
+    --z-bg: #000000;
+    --z-surface: #1c1c1e;
+    --z-chip: #1c1c1e;
   }
 }
 
 * { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
+html {
+  height: 100%;
+  background: var(--z-bg);
 }
 
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
   -webkit-text-size-adjust: auto;
-  min-height: 100%;
+  background: var(--z-bg);
+  color: var(--ink);
 }
 
 html:has(body.feed),
 body.feed {
   height: 100%;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
   overflow: hidden;
   overscroll-behavior: none;
-  background: var(--bg);
+  background: var(--z-bg);
 }
 
 body.feed .page {
   height: 100%;
+  min-height: -webkit-fill-available;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--bg);
-  padding: 0 0 24px;
+  background: var(--z-bg);
+  padding: 0;
 }
 
 .page-header {
   flex: none;
-  margin: 0 20px 12px;
+  margin: 0 var(--page-inset-h) var(--header-bottom);
 }
 
 .page-header h1 {
@@ -92,7 +101,7 @@ body.feed .page {
 /* ZStorePageSearchBar */
 .search-wrap {
   flex: none;
-  margin: 0 20px 6px;
+  margin: 0 var(--page-inset-h) var(--search-bottom);
 }
 
 .search {
@@ -102,8 +111,8 @@ body.feed .page {
   height: 46px;
   padding: 0 14px;
   border-radius: 14px;
-  background: var(--surface);
-  border: 0.8px solid var(--stroke-search);
+  background: var(--z-surface);
+  border: 0.8px solid var(--z-stroke-search);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
@@ -117,13 +126,7 @@ body.feed .page {
   color: var(--muted);
 }
 
-.search .glyph svg {
-  display: block;
-}
-
-.search.has-query .glyph {
-  color: var(--accent);
-}
+.search.has-query .glyph { color: var(--accent); }
 
 .search input {
   flex: 1;
@@ -138,20 +141,11 @@ body.feed .page {
   font: 400 16px/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
 }
 
 .search input::placeholder {
   color: var(--muted);
   opacity: 1;
-}
-
-.search input::-webkit-search-decoration,
-.search input::-webkit-search-cancel-button,
-.search input::-webkit-search-results-button,
-.search input::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  display: none;
 }
 
 .search .clear {
@@ -160,13 +154,11 @@ body.feed .page {
   height: 22px;
   border: 0;
   padding: 0;
-  margin: 0;
   background: transparent;
   color: var(--muted);
   display: none;
   align-items: center;
   justify-content: center;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .search.has-query .clear { display: flex; }
@@ -175,11 +167,11 @@ body.feed .page {
   flex: none;
   display: flex;
   gap: 4px;
-  padding: 7px 20px 6px;
+  padding: var(--chip-row-top) var(--page-inset-h) var(--filters-bottom);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  background: var(--bg);
+  background: var(--z-bg);
 }
 
 .chips::-webkit-scrollbar { display: none; }
@@ -191,7 +183,7 @@ body.feed .page {
   padding: 0 10px;
   border: 0;
   border-radius: 999px;
-  background: var(--chip);
+  background: var(--z-chip);
   color: var(--ink);
   font: 500 14px/34px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   -webkit-tap-highlight-color: transparent;
@@ -214,7 +206,6 @@ body.feed .page {
   background: #ff3b30;
   color: #fff;
   font: 700 11px/18px -apple-system, BlinkMacSystemFont, sans-serif;
-  text-align: center;
   display: none;
 }
 
@@ -222,14 +213,14 @@ body.feed .page {
   display: inline-block;
 }
 
-/* List container — ZStoreGlassFill */
+/* ZStoreGlassFill list — fills space under header/search/chips */
 .list-shell {
-  flex: 1 1 auto;
+  flex: 1 1 0;
   min-height: 0;
-  margin: 0 16px;
-  border-radius: 24px;
-  background: var(--surface);
-  border: 0.6px solid var(--stroke-list);
+  margin: 0 var(--list-inset-h) var(--list-inset-b);
+  border-radius: var(--list-radius);
+  background: var(--z-surface);
+  border: 0.6px solid var(--z-stroke-list);
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -311,15 +302,9 @@ body.feed .page {
   color: var(--ink);
 }
 
-.empty p, .no-results p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.35;
-}
-
 .row.is-hidden { display: none; }
 
-/* Detail */
+/* Detail pages */
 .detail {
   width: 100%;
   min-height: 100%;
@@ -357,19 +342,12 @@ body.feed .page {
   border-radius: 27px;
   object-fit: cover;
   flex: none;
-  background: #dfe6f3;
-  border: 1px solid rgba(128, 128, 128, 0.28);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
-
-.detail-hero .meta { min-width: 0; flex: 1; }
 
 .detail-hero h1 {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.3px;
 }
 
 .detail-hero .sub {
@@ -390,53 +368,9 @@ body.feed .page {
   text-decoration: none;
 }
 
-.ribbon {
-  display: flex;
-  padding: 0 12px 28px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.ribbon::-webkit-scrollbar { display: none; }
-
-.ribbon .cell {
-  flex: 1 0 28%;
-  min-width: 96px;
-  text-align: center;
-  padding: 4px 8px;
-  border-right: 0.5px solid var(--sep);
-}
-
-.ribbon .cell:last-child { border-right: 0; }
-
-.ribbon .label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.ribbon .value {
-  margin-top: 4px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 .section { padding: 0 20px 32px; }
-
-.section h2 {
-  margin: 0 0 10px;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: -0.3px;
-}
-
-.section p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.45;
-}
+.section h2 { margin: 0 0 10px; font-size: 22px; font-weight: 700; }
+.section p { margin: 0; font-size: 15px; line-height: 1.45; }
 
 .features {
   margin: 0;
@@ -446,27 +380,7 @@ body.feed .page {
   background: var(--info-card);
 }
 
-.features li {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  font-size: 15px;
-  line-height: 1.35;
-}
-
 .features li + li { margin-top: 12px; }
-
-.features li::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  margin-top: 2px;
-  flex: none;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 50%, #fff 0 28%, transparent 29%),
-    var(--tint, #0088fe);
-}
 
 .info-table {
   border-radius: 18px;
@@ -477,25 +391,24 @@ body.feed .page {
 .info-row {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
   padding: 12px 16px;
   border-bottom: 0.5px solid var(--sep);
   font-size: 15px;
 }
 
 .info-row:last-child { border-bottom: 0; }
-.info-row .k { color: var(--muted); }
-.info-row .v { text-align: right; font-weight: 500; }
 
 @media (min-width: 768px) {
-  .page-header { margin-left: 36px; margin-right: 36px; }
+  :root {
+    --page-inset-h: 36px;
+    --list-inset-h: 36px;
+    --list-inset-b: 36px;
+    --list-radius: 30px;
+  }
   .page-header h1 { font-size: 44px; }
   .page-header .subtitle { font-size: 18px; }
-  .search-wrap { margin-left: 36px; margin-right: 36px; }
   .search { height: 56px; border-radius: 18px; padding: 0 18px; }
-  .chips { padding-left: 36px; padding-right: 36px; gap: 10px; }
-  .chip { height: 42px; padding: 0 16px; font-size: 17px; line-height: 42px; }
-  .list-shell { margin-left: 36px; margin-right: 36px; border-radius: 30px; }
+  .chip { height: 42px; line-height: 42px; padding: 0 16px; font-size: 17px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
