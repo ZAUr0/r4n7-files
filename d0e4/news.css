@@ -133,17 +133,12 @@ a.card:active { transform: scale(0.97); }
 }
 
 .copy .date {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 8px;
-  padding: 5px 11px;
-  border-radius: 999px;
-  background: rgba(120, 120, 128, 0.12);
+  display: block;
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 1.25;
   color: var(--date);
-  font-size: 12px;
-  font-weight: 510;
-  line-height: 1.2;
-  letter-spacing: -0.08px;
+  font-weight: 400;
 }
 
 .copy p {
@@ -176,17 +171,9 @@ article {
 }
 
 article .date {
-  display: inline-flex;
-  align-items: center;
-  margin: 0 0 12px;
-  padding: 5px 11px;
-  border-radius: 999px;
-  background: rgba(120, 120, 128, 0.12);
+  margin: 0 0 8px;
   color: var(--date);
-  font-size: 12px;
-  font-weight: 510;
-  line-height: 1.2;
-  letter-spacing: -0.08px;
+  font-size: 15px;
 }
 
 article h1 {
@@ -235,10 +222,6 @@ article li {
 
 @media (prefers-color-scheme: dark) {
   .hero { background: #2c2c2e; }
-  .copy .date,
-  article .date {
-    background: rgba(235, 235, 245, 0.14);
-  }
 }
 
 @media (min-width: 768px) {
