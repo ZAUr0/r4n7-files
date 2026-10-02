@@ -88,7 +88,9 @@ a.card:active { transform: scale(0.97); }
 .hero {
   display: block;
   width: 100%;
-  height: 132px;
+  aspect-ratio: 1170 / 450;
+  height: auto;
+  max-height: none;
   object-fit: cover;
   object-position: center;
   border-radius: 16px;
