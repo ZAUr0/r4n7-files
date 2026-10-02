@@ -1,8 +1,8 @@
 {
   "name": "ZStore Services",
   "subtitle": "Нужные для вашего айфон сервисы",
-  "revision": 14,
-  "badge": 0,
+  "revision": 15,
+  "badge": 1,
   "services": [
     {
       "id": "vaynah-vpn",
@@ -23,7 +23,8 @@
       "whatsNew": "Обновили список серверов и ускорили подключение.",
       "version": "2.0",
       "actionTitle": "ОПЛАТИТЬ",
-      "actionURL": "https://t.me/VaynahVPNbot"
+      "actionURL": "https://t.me/VaynahVPNbot",
+      "page": "s/vaynah-vpn.html"
     }
   ]
 }
