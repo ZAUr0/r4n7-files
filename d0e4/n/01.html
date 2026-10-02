@@ -10,8 +10,9 @@
     --bg: #f2f2f7;
     --card: #ffffff;
     --ink: #111318;
-    --muted: #6e7380;
+    --muted: #8e8e93;
     --date: #8e8e93;
+    --chev: #c7c7cc;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -20,6 +21,7 @@
       --ink: #f2f2f7;
       --muted: #aeaeb2;
       --date: #8e8e93;
+      --chev: #636366;
     }
   }
   * { box-sizing: border-box; }
@@ -32,7 +34,11 @@
     width: 100%;
     padding: 52px 20px calc(96px + env(safe-area-inset-bottom));
   }
-  .sheet {
+  /* Точная копия карточки с главного экрана новостей */
+  .card {
+    display: block;
+    width: 100%;
+    margin: 0 0 16px;
     background: var(--card);
     border-radius: 24px;
     overflow: hidden;
@@ -43,56 +49,76 @@
   .hero {
     display: block;
     width: 100%;
-    height: 210px;
+    height: 132px;
     object-fit: cover;
     object-position: center;
     border-radius: 16px;
     background: #dfe6f3;
   }
-  .content {
-    padding: 16px 16px 20px;
+  .body {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px 18px;
   }
-  .date { margin: 0 0 8px; color: var(--date); font-size: 15px; }
-  h1 {
-    margin: 0 0 14px;
-    font-size: 28px;
-    line-height: 1.15;
-    letter-spacing: -0.45px;
+  .copy { min-width: 0; flex: 1; }
+  .copy strong {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
     font-weight: 700;
-  }
-  .content p {
-    margin: 0 0 12px;
-    font-size: 17px;
-    line-height: 1.45;
+    letter-spacing: -0.35px;
     color: var(--ink);
   }
-  .content p:last-child { margin-bottom: 0; }
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; }
+  .copy .date {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: var(--date);
+    font-weight: 400;
+  }
+  .copy p {
+    margin: 6px 0 0;
+    font-size: 15px;
+    line-height: 1.35;
+    color: var(--muted);
+    font-weight: 400;
+  }
+  .chev {
+    flex: none;
+    color: var(--chev);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    padding-right: 2px;
+    align-self: center;
   }
   @media (prefers-color-scheme: dark) {
     .hero { background: #2c2c2e; }
   }
   @media (min-width: 768px) {
     article { padding-left: 40px; padding-right: 40px; }
-    h1 { font-size: 32px; }
-    .hero { height: 240px; }
+    .copy strong { font-size: 22px; }
+    .copy p { font-size: 16px; }
+    .hero { height: 160px; }
     .hero-pad { padding: 14px 14px 0; }
-    .content p { font-size: 18px; }
   }
 </style>
 </head>
 <body>
   <article>
-    <div class="sheet">
+    <div class="card">
       <div class="hero-pad">
         <img class="hero" src="../covers/01.png" alt="Добро пожаловать в zStore" width="1170" height="450" decoding="async">
       </div>
-      <div class="content">
-        <p class="date">Сегодня</p>
-        <h1>Добро пожаловать в zStore</h1>
-        <p>Находите нужные приложения и подписки в одном месте — быстро, удобно и без лишних действий.</p>
-        <p>zStore объединяет всё необходимое для вашего iPhone в простом и современном интерфейсе.</p>
+      <div class="body">
+        <div class="copy">
+          <strong>Добро пожаловать в zStore</strong>
+          <span class="date">Сегодня</span>
+          <p>Находите нужные приложения и подписки в одном месте — быстро, удобно и без лишних действий. zStore объединяет всё необходимое для вашего iPhone в простом и современном интерфейсе.</p>
+        </div>
+        <div class="chev">›</div>
       </div>
     </div>
   </article>
