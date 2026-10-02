@@ -1,34 +1,35 @@
 /* zStore Сервисы — только дизайн.
-   Контент: s.html и s/*.html */
+   Контент: s.html и s/*.html
+   Лента как zStore / Библиотека: белый фон, серый контейнер, скролл только списка. */
 
 :root {
   color-scheme: light dark;
-  --bg: #f2f2f7;
-  --card: #ffffff;
-  --list: rgba(255, 255, 255, 0.92);
+  --bg: #ffffff;
+  --list: #f2f2f7;
   --ink: #111318;
   --muted: #8e8e93;
   --sep: rgba(60, 60, 67, 0.29);
   --accent: #0088fe;
-  --chip: #ffffff;
+  --chip: #f2f2f7;
   --chip-sel: rgba(0, 136, 254, 0.12);
-  --search: rgba(255, 255, 255, 0.92);
+  --search: #f2f2f7;
   --detail-bg: #ffffff;
   --info-card: #f2f2f7;
+  --stroke: rgba(60, 60, 67, 0.22);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #000000;
-    --card: #1c1c1e;
     --list: #1c1c1e;
     --ink: #f2f2f7;
     --muted: #8e8e93;
     --sep: rgba(84, 84, 88, 0.65);
-    --chip: #2c2c2e;
+    --chip: #1c1c1e;
     --search: #1c1c1e;
     --detail-bg: #000000;
     --info-card: #1c1c1e;
+    --stroke: rgba(84, 84, 88, 0.45);
   }
 }
 
@@ -46,14 +47,26 @@ body {
   min-height: 100%;
 }
 
-/* ——— Лента (s.html) ——— */
+/* ——— Лента: фиксированный хром, скролл только контейнера ——— */
 
-.page {
+html:has(body.feed),
+body.feed {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body.feed .page {
+  height: 100%;
   width: 100%;
-  padding: 0 0 calc(96px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 0 calc(24px + env(safe-area-inset-bottom, 0px));
 }
 
 .page-header {
+  flex: none;
   margin: 0 20px 12px;
   padding-top: 0;
 }
@@ -76,6 +89,7 @@ body {
 }
 
 .search-wrap {
+  flex: none;
   margin: 0 20px 6px;
 }
 
@@ -88,7 +102,6 @@ body {
   border-radius: 14px;
   background: var(--search);
   border: 0.8px solid rgba(60, 60, 67, 0.28);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
 .search svg {
@@ -126,9 +139,10 @@ body {
 .search.has-query svg { color: var(--accent); }
 
 .chips {
+  flex: none;
   display: flex;
   gap: 4px;
-  padding: 7px 20px 8px;
+  padding: 7px 20px 6px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -175,12 +189,16 @@ body {
 }
 
 .list-shell {
-  margin: 0 16px 24px;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0 16px;
   border-radius: 24px;
   background: var(--list);
-  border: 0.6px solid rgba(60, 60, 67, 0.22);
-  overflow: hidden;
-  min-height: 320px;
+  border: 0.6px solid var(--stroke);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .row {
@@ -191,7 +209,6 @@ body {
   text-decoration: none;
   color: inherit;
   -webkit-tap-highlight-color: transparent;
-  border-bottom: 0.5px solid transparent;
   background:
     linear-gradient(var(--sep), var(--sep)) left 90px bottom / calc(100% - 90px) 0.5px no-repeat;
 }
