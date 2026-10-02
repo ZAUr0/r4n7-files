@@ -1,35 +1,36 @@
-/* zStore Сервисы — только дизайн.
-   Контент: s.html и s/*.html
-   Лента как zStore / Библиотека: белый фон, серый контейнер, скролл только списка. */
+/* zStore Сервисы — как zStore / Библиотека
+   Page: systemBackground
+   Search/List: secondarySystemBackground (ZStoreGlassFill)
+   Chips: secondarySystemGroupedBackground */
 
 :root {
   color-scheme: light dark;
   --bg: #ffffff;
-  --list: #f2f2f7;
-  --ink: #111318;
+  --surface: #f2f2f7;
+  --chip: #ffffff;
+  --chip-sel: rgba(0, 136, 254, 0.12);
+  --ink: #000000;
   --muted: #8e8e93;
   --sep: rgba(60, 60, 67, 0.29);
   --accent: #0088fe;
-  --chip: #f2f2f7;
-  --chip-sel: rgba(0, 136, 254, 0.12);
-  --search: #f2f2f7;
+  --stroke-search: rgba(60, 60, 67, 0.29);
+  --stroke-list: rgba(60, 60, 67, 0.12);
   --detail-bg: #ffffff;
   --info-card: #f2f2f7;
-  --stroke: rgba(60, 60, 67, 0.22);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #000000;
-    --list: #1c1c1e;
-    --ink: #f2f2f7;
+    --surface: #1c1c1e;
+    --chip: #1c1c1e;
+    --ink: #ffffff;
     --muted: #8e8e93;
     --sep: rgba(84, 84, 88, 0.65);
-    --chip: #1c1c1e;
-    --search: #1c1c1e;
+    --stroke-search: rgba(84, 84, 88, 0.65);
+    --stroke-list: rgba(84, 84, 88, 0.35);
     --detail-bg: #000000;
     --info-card: #1c1c1e;
-    --stroke: rgba(84, 84, 88, 0.45);
   }
 }
 
@@ -47,13 +48,12 @@ body {
   min-height: 100%;
 }
 
-/* ——— Лента: фиксированный хром, скролл только контейнера ——— */
-
 html:has(body.feed),
 body.feed {
   height: 100%;
   overflow: hidden;
   overscroll-behavior: none;
+  background: var(--bg);
 }
 
 body.feed .page {
@@ -62,13 +62,13 @@ body.feed .page {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 0 0 calc(24px + env(safe-area-inset-bottom, 0px));
+  background: var(--bg);
+  padding: 0 0 24px;
 }
 
 .page-header {
   flex: none;
   margin: 0 20px 12px;
-  padding-top: 0;
 }
 
 .page-header h1 {
@@ -77,6 +77,7 @@ body.feed .page {
   line-height: 1.05;
   letter-spacing: -0.6px;
   font-weight: 700;
+  color: var(--ink);
 }
 
 .page-header .subtitle {
@@ -88,6 +89,7 @@ body.feed .page {
   font-weight: 400;
 }
 
+/* ZStorePageSearchBar */
 .search-wrap {
   flex: none;
   margin: 0 20px 6px;
@@ -100,27 +102,57 @@ body.feed .page {
   height: 46px;
   padding: 0 14px;
   border-radius: 14px;
-  background: var(--search);
-  border: 0.8px solid rgba(60, 60, 67, 0.28);
+  background: var(--surface);
+  border: 0.8px solid var(--stroke-search);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
 }
 
-.search svg {
+.search .glyph {
   flex: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--muted);
+}
+
+.search .glyph svg {
+  display: block;
+}
+
+.search.has-query .glyph {
+  color: var(--accent);
 }
 
 .search input {
   flex: 1;
   min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   border: 0;
   outline: none;
   background: transparent;
   color: var(--ink);
   font: 400 16px/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
-.search input::placeholder { color: var(--muted); }
+.search input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.search input::-webkit-search-decoration,
+.search input::-webkit-search-cancel-button,
+.search input::-webkit-search-results-button,
+.search input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  display: none;
+}
 
 .search .clear {
   flex: none;
@@ -128,15 +160,16 @@ body.feed .page {
   height: 22px;
   border: 0;
   padding: 0;
+  margin: 0;
   background: transparent;
   color: var(--muted);
   display: none;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .search.has-query .clear { display: flex; }
-.search.has-query svg { color: var(--accent); }
 
 .chips {
   flex: none;
@@ -146,6 +179,7 @@ body.feed .page {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  background: var(--bg);
 }
 
 .chips::-webkit-scrollbar { display: none; }
@@ -159,7 +193,7 @@ body.feed .page {
   border-radius: 999px;
   background: var(--chip);
   color: var(--ink);
-  font: 500 14px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font: 500 14px/34px -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -188,13 +222,14 @@ body.feed .page {
   display: inline-block;
 }
 
+/* List container — ZStoreGlassFill */
 .list-shell {
   flex: 1 1 auto;
   min-height: 0;
   margin: 0 16px;
   border-radius: 24px;
-  background: var(--list);
-  border: 0.6px solid var(--stroke);
+  background: var(--surface);
+  border: 0.6px solid var(--stroke-list);
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -213,10 +248,7 @@ body.feed .page {
     linear-gradient(var(--sep), var(--sep)) left 90px bottom / calc(100% - 90px) 0.5px no-repeat;
 }
 
-.row:last-child {
-  background: none;
-}
-
+.row:last-child { background: none; }
 .row:active { opacity: 0.72; }
 
 .row .icon {
@@ -229,10 +261,7 @@ body.feed .page {
   border: 1px solid rgba(128, 128, 128, 0.3);
 }
 
-.row .copy {
-  min-width: 0;
-  flex: 1;
-}
+.row .copy { min-width: 0; flex: 1; }
 
 .row .copy strong {
   display: block;
@@ -288,10 +317,9 @@ body.feed .page {
   line-height: 1.35;
 }
 
-.row[hidden], .row.is-hidden { display: none; }
+.row.is-hidden { display: none; }
 
-/* ——— Деталь (s/*.html) ——— */
-
+/* Detail */
 .detail {
   width: 100%;
   min-height: 100%;
@@ -303,9 +331,7 @@ body.feed .page {
 .detail::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  left: 0; right: 0; top: 0;
   height: 340px;
   background: linear-gradient(
     to bottom,
@@ -366,7 +392,6 @@ body.feed .page {
 
 .ribbon {
   display: flex;
-  gap: 0;
   padding: 0 12px 28px;
   overflow-x: auto;
   scrollbar-width: none;
@@ -396,12 +421,9 @@ body.feed .page {
   margin-top: 4px;
   font-size: 15px;
   font-weight: 600;
-  color: var(--ink);
 }
 
-.section {
-  padding: 0 20px 32px;
-}
+.section { padding: 0 20px 32px; }
 
 .section h2 {
   margin: 0 0 10px;
@@ -444,7 +466,6 @@ body.feed .page {
   background:
     radial-gradient(circle at 50% 50%, #fff 0 28%, transparent 29%),
     var(--tint, #0088fe);
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tint, #0088fe) 70%, #000);
 }
 
 .info-table {
@@ -463,13 +484,8 @@ body.feed .page {
 }
 
 .info-row:last-child { border-bottom: 0; }
-
 .info-row .k { color: var(--muted); }
-.info-row .v {
-  text-align: right;
-  font-weight: 500;
-  color: var(--ink);
-}
+.info-row .v { text-align: right; font-weight: 500; }
 
 @media (min-width: 768px) {
   .page-header { margin-left: 36px; margin-right: 36px; }
@@ -478,7 +494,7 @@ body.feed .page {
   .search-wrap { margin-left: 36px; margin-right: 36px; }
   .search { height: 56px; border-radius: 18px; padding: 0 18px; }
   .chips { padding-left: 36px; padding-right: 36px; gap: 10px; }
-  .chip { height: 42px; padding: 0 16px; font-size: 17px; }
+  .chip { height: 42px; padding: 0 16px; font-size: 17px; line-height: 42px; }
   .list-shell { margin-left: 36px; margin-right: 36px; border-radius: 30px; }
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "ZStore Services",
   "subtitle": "Нужные для вашего айфон сервисы",
-  "revision": 8,
+  "revision": 9,
   "badge": 1,
   "site": "s.html",
   "notification": {
