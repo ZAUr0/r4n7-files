@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-01T18:04:02Z",
+  "updated_at": "2026-10-03T13:48:48Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261003_bdeb1e",
+      "name": "АбдурРохман",
+      "rating": 5,
+      "text": "Честно говоря удивлен, советую) АЛлах1 диканц бекхам бойл Хьун",
+      "date": "2026-10-03",
+      "status": "approved"
+    },
     {
       "id": "review_20261001_7ed763",
       "name": "Малик",
