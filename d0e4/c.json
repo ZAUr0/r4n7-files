@@ -1,8 +1,12 @@
 {
-  "revision": 14,
+  "revision": 15,
   "badge": 1,
   "title": "Новости",
   "subtitle": "Обновления и анонсы zStore",
   "site": "d.html",
+  "notification": {
+    "title": "zStore",
+    "body": "Добавили Telegram+"
+  },
   "articles": []
 }
