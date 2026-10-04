@@ -3263,17 +3263,17 @@
       "category": "social",
       "pinnedCategory": "social",
       "website": "https://www.youtube.com",
-      "version": "21.38.2",
-      "versionDate": "2026-09-23T00:00:00Z",
-      "size": 155047829,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/114e0196.ipa",
+      "version": "21.39.4",
+      "versionDate": "2026-10-04T00:00:00Z",
+      "size": 164310171,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-04/dde3656b.ipa",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/114e0196.ipa",
-          "size": 155047829,
-          "version": "21.38.2",
-          "buildVersion": "21.38.2",
-          "date": "2026-09-23T00:00:00Z",
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-04/dde3656b.ipa",
+          "size": 164310171,
+          "version": "21.39.4",
+          "buildVersion": "21.39.4",
+          "date": "2026-10-04T00:00:00Z",
           "minOSVersion": "10.0"
         }
       ],
