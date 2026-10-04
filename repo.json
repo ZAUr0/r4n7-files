@@ -3552,19 +3552,19 @@
       "privacyURL": "https://vk.com/privacy",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/04006c4e.ipa",
-          "size": 248247825,
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-04/6bd4affe.ipa",
+          "size": 248821743,
           "version": "8.183",
           "buildVersion": "8149",
-          "date": "2026-09-18T00:00:00Z",
+          "date": "2026-10-04T00:00:00Z",
           "minOSVersion": "10.0",
           "localizedDescription": "Провели техническое обслуживание: исправили мелкие сбои, подкрутили винтики в приложении."
         }
       ],
       "version": "8.183",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 248247825,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/04006c4e.ipa",
+      "versionDate": "2026-10-04T00:00:00Z",
+      "size": 248821743,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-04/6bd4affe.ipa",
       "rustoreURL": "https://www.rustore.ru/catalog/app/com.vkontakte.android",
       "rating": 4.16,
       "ratingCount": 316724,
