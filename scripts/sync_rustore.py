@@ -390,7 +390,7 @@ def apply_pins(app: dict) -> None:
 
 
 def sync_app(app: dict) -> str | None:
-    if app.get("skipStoreSync") or app.get("pinnedScreenshots"):
+    if app.get("skipStoreSync"):
         return None
     package = package_from_url(app.get("rustoreURL")) or guessed_package(app)
     if not package:
