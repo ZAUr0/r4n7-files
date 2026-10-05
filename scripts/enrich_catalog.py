@@ -24,6 +24,7 @@ ICONS_DIR = ROOT / "icons"
 SHOTS_DIR = ROOT / "screenshots"
 
 sys.path.insert(0, str(SCRIPTS))
+from catalog_urls import publish_url  # noqa: E402
 from sync_rustore import parse_reviews, package_from_url, guessed_package  # noqa: E402
 
 RUSTORE_VER = "12000"
@@ -32,8 +33,8 @@ REVIEWS_URL = "https://www.rustore.ru/catalog/app/{package}/reviews"
 ITUNES_LOOKUP = "https://itunes.apple.com/lookup?{query}&country={country}&entity=software"
 JINA = "https://r.jina.ai/"
 
-ICON_BASE = "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/"
-SHOT_BASE = "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/"
+ICON_BASE = publish_url("icons/")
+SHOT_BASE = publish_url("screenshots/")
 
 CTX = ssl.create_default_context()
 MIN_ICON = 350

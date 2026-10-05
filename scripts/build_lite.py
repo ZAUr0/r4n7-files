@@ -12,6 +12,9 @@ From it this script derives:
                           originals are 0.5-3 MB PNGs); originals are kept on failure
   details/<id>.json       everything the app page needs, per bundle id
 
+When ZSTORE_USE_CDN=1, public URLs in JSON use ZSTORE_CDN_BASE (default
+https://cdn.zstoreplus.ru). Run deploy/sync_cdn.sh to upload icons/ and shots/.
+
 Run after every change to repo.json or icons/.
 """
 
@@ -28,10 +31,11 @@ from pathlib import Path
 
 from PIL import Image, ImageFile
 
+from catalog_urls import GITHUB_RAW, local_path_from_url, publish_url
+
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW_PREFIX = "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/"
 
 THUMB_DIR = "icons/s"
 PAGE_ICON_DIR = "icons/m"
@@ -68,11 +72,13 @@ def has_transparency(image: Image.Image) -> bool:
 
 
 def resized_icon(icon_url: str | None, used: set[str], directory: str, side: int) -> str | None:
-    if not icon_url or not icon_url.startswith(RAW_PREFIX):
+    if not icon_url:
         return icon_url
 
-    source = ROOT / icon_url[len(RAW_PREFIX):]
-    if not source.is_file():
+    source = local_path_from_url(icon_url)
+    if source is None and icon_url.startswith(GITHUB_RAW):
+        source = ROOT / icon_url[len(GITHUB_RAW) :]
+    if source is None or not source.is_file():
         return icon_url
 
     digest = hashlib.sha1(source.read_bytes()).hexdigest()[:8]
@@ -95,11 +101,19 @@ def resized_icon(icon_url: str | None, used: set[str], directory: str, side: int
         return icon_url
 
     used.add(name)
-    return f"{RAW_PREFIX}{directory}/{name}"
+    return publish_url(f"{directory}/{name}")
 
 
 def shot_name(url: str) -> str:
     return hashlib.sha1(url.encode()).hexdigest()[:16] + ".jpg"
+
+
+def _hosted_shot(url: str) -> bool:
+    rel = local_path_from_url(url)
+    if rel is None:
+        return False
+    parts = rel.parts
+    return SHOTS_DIR in parts or "screenshots" in parts
 
 
 def mirror_shot(url: str) -> bool:
@@ -129,7 +143,7 @@ def mirror_shots(repo: dict) -> set[str]:
         url
         for app in repo.get("apps") or []
         for url in app.get("screenshotURLs") or []
-        if isinstance(url, str) and url.startswith("http") and not url.startswith(RAW_PREFIX + SHOTS_DIR)
+        if isinstance(url, str) and url.startswith("http") and not _hosted_shot(url)
     })
     with ThreadPoolExecutor(max_workers=12) as pool:
         results = pool.map(mirror_shot, urls)
@@ -160,14 +174,19 @@ def lite_app(app: dict, used_thumbs: set[str]) -> dict:
 def app_details(app: dict, mirrored: set[str], used_page_icons: set[str]) -> dict:
     details = {key: app[key] for key in DETAIL_KEYS if app.get(key)}
     if app.get("screenshotURLs"):
-        details["screenshotURLs"] = [
-            f"{RAW_PREFIX}{SHOTS_DIR}/{shot_name(url)}" if url in mirrored else url
-            for url in app["screenshotURLs"]
-        ]
+        shot_urls = []
+        for url in app["screenshotURLs"]:
+            if url in mirrored:
+                shot_urls.append(publish_url(f"{SHOTS_DIR}/{shot_name(url)}"))
+            elif _hosted_shot(url):
+                shot_urls.append(publish_url(local_path_from_url(url).relative_to(ROOT).as_posix()))
+            else:
+                shot_urls.append(url)
+        details["screenshotURLs"] = shot_urls
     if app.get("versions"):
         details["versions"] = app["versions"]
     if app.get("iconURL"):
-        details["iconURL"] = resized_icon(app["iconURL"], used_page_icons, PAGE_ICON_DIR, PAGE_ICON_SIZE)
+        details["iconURL"] = resized_icon(app.get("iconURL"), used_page_icons, PAGE_ICON_DIR, PAGE_ICON_SIZE)
     return details
 
 
