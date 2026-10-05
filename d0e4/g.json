@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T13:54:16Z",
+  "updated_at": "2026-10-05T13:33:42Z",
   "submit_url": "https://install.zstoreplus.ru/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261005_4e0460",
+      "name": "Майрбек",
+      "rating": 5,
+      "text": "Приложение отличное👍🏻 хорошо постарались. Только прошу добавьте Абсолют Банк😂",
+      "date": "2026-10-05",
+      "status": "approved"
+    },
     {
       "id": "review_20261003_fb13e4",
       "name": "Ислам",
