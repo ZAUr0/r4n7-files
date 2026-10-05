@@ -15220,7 +15220,7 @@
     },
     {
       "name": "Happ Plus",
-      "bundleIdentifier": "su.ffg.happ.lite",
+      "bundleIdentifier": "su.ffg.happ",
       "developerName": "Flyfrog LLC",
       "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/3d714cbf.png",
       "localizedDescription": "Important Notice\nHapp does not sell or provide VPN services. Beware of scammers claiming to offer “official Happ VPNs” — they are not affiliated with us. Users must set up their own servers and follow local laws when using the app.\n\nHapp is a mobile app that makes using proxy and vpn servers easy, offering a user-friendly interface and useful features.\n\nMain functionalities include:\n\nConfiguration of proxies based on rules.\nSupport for multiple protocol types.\nHidden subscriptions.\nEncrypted subscriptions.\n\nProtocols supported are:\n\nVLESS(Reality)\nVMess\nTrojan\nShadowsocks\nSocks\nHysteria2\n\nHapp ensures your network activity remains private by not collecting any data; your information remains solely on your device without being sent to external servers.\n\nIt's important to highlight that Happ does not provide VPN services for purchase. Users are responsible for acquiring or setting up their own servers. Users should also comply with applicable laws in their jurisdiction when utilizing the app.",
@@ -15232,18 +15232,18 @@
       "appStoreURL": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?uo=4",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-05/da5e2d97.ipa",
-          "size": 247283782,
-          "version": "5.8.1",
-          "buildVersion": "2609111209",
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-05/2e205616.ipa",
+          "size": 68535152,
+          "version": "5.7.0",
+          "buildVersion": "2609021014",
           "date": "2026-10-05T00:00:00Z",
           "minOSVersion": "15.0"
         }
       ],
-      "version": "5.8.1",
+      "version": "5.7.0",
       "versionDate": "2026-10-05T00:00:00Z",
-      "size": 247283782,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-05/da5e2d97.ipa",
+      "size": 68535152,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-05/2e205616.ipa",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/happ-plus-1-b00f5e3a.jpg",
         "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/screenshots/happ-plus-2-6d36741c.jpg",
