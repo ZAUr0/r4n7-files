@@ -1,5 +1,9 @@
 {
-  "revision": 7,
-  "badge": 0,
-  "title": "Обновления"
+  "revision": 8,
+  "badge": 1,
+  "title": "Обновления",
+  "notification": {
+    "title": "zStore",
+    "body": "Мы обновили приложение в каталоге"
+  }
 }
