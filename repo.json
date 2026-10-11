@@ -14942,18 +14942,18 @@
       "website": "http://damtechdesigns.com",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/61f504c9.ipa",
-          "size": 64450307,
-          "version": "2026.02",
-          "buildVersion": "62",
-          "date": "2026-09-18T00:00:00Z",
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/8ca19b6b.ipa",
+          "size": 68579364,
+          "version": "2026.09",
+          "buildVersion": "133",
+          "date": "2026-10-11T00:00:00Z",
           "minOSVersion": "17.0"
         }
       ],
-      "version": "2026.02",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 64450307,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/61f504c9.ipa",
+      "version": "2026.09",
+      "versionDate": "2026-10-11T00:00:00Z",
+      "size": 68579364,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/8ca19b6b.ipa",
       "rating": 4.65738,
       "ratingCount": 8870,
       "screenshotURLs": [
