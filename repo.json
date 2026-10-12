@@ -3448,19 +3448,19 @@
       "pinnedCategory": "social",
       "versions": [
         {
-          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/781ee521.ipa",
-          "size": 50551893,
+          "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/797cc826.ipa",
+          "size": 48237991,
           "version": "26.17.3",
           "buildVersion": "31710",
-          "date": "2026-09-18T00:00:00Z",
-          "minOSVersion": "10.0",
+          "date": "2026-10-12T00:00:00Z",
+          "minOSVersion": "15.6",
           "localizedDescription": "• Авторы каналов теперь могут получать донаты от подписчиков\n\n• Теперь опросы можно публиковать в каналах, добавлять к ним обложку и описание и делать анонимными"
         }
       ],
       "version": "26.17.3",
-      "versionDate": "2026-09-18T00:00:00Z",
-      "size": 50551893,
-      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-09-18/781ee521.ipa",
+      "versionDate": "2026-10-12T00:00:00Z",
+      "size": 48237991,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/797cc826.ipa",
       "rating": 4.2,
       "ratingCount": 318445,
       "downloads": 80000000,
