@@ -3539,7 +3539,7 @@
       ]
     },
     {
-      "name": "Vk iOS 17+",
+      "name": "Vk для iOS 17+",
       "bundleIdentifier": "com.vk.vkclient",
       "developerName": "VK",
       "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/6cc0aa41.png",
@@ -3642,7 +3642,7 @@
       ]
     },
     {
-      "name": "Vk iOS 16",
+      "name": "Vk для iOS 16",
       "bundleIdentifier": "com.vk.vkclient16",
       "developerName": "VK",
       "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/6cc0aa41.png",
