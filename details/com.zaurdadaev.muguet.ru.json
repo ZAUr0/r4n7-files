@@ -1,0 +1,21 @@
+{
+  "localizedDescription": "zNur - Коран в удобном формате.\nЧитайте Священный Коран, слушайте чтение сур и сохраняйте аяты, к которым хотите возвращаться.\nzNur помогает удобно обращаться к Корану в течение дня, дома, в дороге или во время отдыха.\nВозможности приложения\nЧтение Корана - доступ к сурам и аятам.\nАудио - слушайте чтение Священного Корана.\nИзбранное - сохраняйте суры и аяты, которые хотите перечитать.\nПродолжение прослушивания - возвращайтесь к месту, на котором остановились.\nУдобный интерфейс - ничего лишнего, всё необходимое под рукой.",
+  "reviews": [],
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/shots/f15548d6a1cabb94.jpg",
+    "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/shots/3dc6b98fcf71e87a.jpg",
+    "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/shots/5c9f0e3c4fdbfed1.jpg",
+    "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/shots/c5a58cf26ebe15d9.jpg",
+    "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/shots/c7faeacfa2b400f3.jpg"
+  ],
+  "versions": [
+    {
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-18/92ad2a28.ipa",
+      "size": 3044278,
+      "version": "1.0.0",
+      "date": "2026-10-18T19:12:22Z",
+      "minOSVersion": "17.0"
+    }
+  ],
+  "iconURL": "https://raw.githubusercontent.com/ZAUr0/r4n7-files/main/icons/m/93a3cf78.jpg"
+}
