@@ -1,8 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T13:33:42Z",
+  "updated_at": "2026-10-20T03:08:38Z",
   "submit_url": "https://install.zstore.su/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261020_1919e3",
+      "name": "Z",
+      "rating": 1,
+      "text": "такое себе",
+      "date": "2026-10-20",
+      "status": "approved",
+      "bundle_id": "com.ea.ios.maddennfl21mobile",
+      "app_name": "Madden NFL 27 Mobile Football"
+    },
     {
       "id": "review_20261005_4e0460",
       "name": "Майрбек",
