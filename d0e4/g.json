@@ -1,8 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T03:38:16Z",
+  "updated_at": "2026-10-20T15:52:19Z",
   "submit_url": "https://install.zstore.su/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261020_0d400b",
+      "name": "Z",
+      "rating": 2,
+      "text": "ну такое себе",
+      "date": "2026-10-20",
+      "status": "approved",
+      "bundle_id": "com.roblox.robloxmobile",
+      "app_name": "Roblox"
+    },
     {
       "id": "review_20261020_dc8b87",
       "name": "HTTPS2",
