@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T03:33:53Z",
-  "submit_url": "https://nimbus.test/api/reviews",
+  "updated_at": "2026-10-20T03:35:10Z",
+  "submit_url": "https://install.zstore.su/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261020_bf958b",
+      "name": "Автотест",
+      "rating": 5,
+      "text": "Проверка автопубликации 5★ 1792467310",
+      "date": "2026-10-20",
+      "status": "approved"
+    },
     {
       "id": "review_20261020_ec6a95",
       "name": "Василий",
