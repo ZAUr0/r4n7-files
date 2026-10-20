@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T03:33:32Z",
+  "updated_at": "2026-10-20T03:33:53Z",
   "submit_url": "https://nimbus.test/api/reviews",
   "reviews": [
+    {
+      "id": "review_20261020_ec6a95",
+      "name": "Василий",
+      "rating": 5,
+      "text": "Отличное приложение!",
+      "date": "2026-10-20",
+      "status": "approved"
+    },
     {
       "id": "review_20261020_fdc955",
       "name": "Василий",
