@@ -15248,16 +15248,16 @@
       "versions": [
         {
           "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/8ca19b6b.ipa",
-          "size": 68579364,
-          "version": "2026.09",
-          "buildVersion": "133",
-          "date": "2026-10-11T00:00:00Z",
+          "size": 70948695,
+          "version": "2026.11",
+          "buildVersion": "136",
+          "date": "2026-10-28T00:00:00Z",
           "minOSVersion": "17.0"
         }
       ],
-      "version": "2026.09",
-      "versionDate": "2026-10-11T00:00:00Z",
-      "size": 68579364,
+      "version": "2026.11",
+      "versionDate": "2026-10-28T00:00:00Z",
+      "size": 70948695,
       "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-11/8ca19b6b.ipa",
       "rating": 4.65738,
       "ratingCount": 8870,
