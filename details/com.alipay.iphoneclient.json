@@ -1,0 +1,109 @@
+{
+  "localizedDescription": "Alipay is a leading open platform for payments and digital services in China.\n\nUsers with a Chinese ID and bank account can use Alipay to make payments online and in person at various merchants outside of China as they travel for leisure, business, or study. \n\nForeign visitors to China can connect their credit card to take advantage of Alipay’s widespread acceptance by tens of millions of merchants across the country. Alipay is not designed or intended for use by foreign users in their home country or anywhere outside of China.",
+  "versionDescription": "The brand new version of Alipay is available, update now!\nMultiple details have been optimized for smoother operation.",
+  "reviews": [
+    {
+      "id": "itunes-333206289-Справедливый покупатель-Полное Г... Но",
+      "title": "Полное Г... Но",
+      "author": "Справедливый покупатель",
+      "text": "Не проходит верификацию, если на паспорте вы без бороды, а в жизни с бородой, то верификацию не пройдёте. Они не понимают, что вы можете измениться за 10 лет за срок, на который даётся заграничный паспорт. Мучался, мучался, так и не прошёл верификацию.",
+      "rating": 1,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "itunes-333206289-Ксения Кастом-Язык",
+      "title": "Язык",
+      "author": "Ксения Кастом",
+      "text": "Сделайте пожалуйста русский язык в приложении. Невозможно пользоваться без переводчика….",
+      "rating": 4,
+      "date": "2026-09-28"
+    },
+    {
+      "id": "itunes-333206289-николас к-Хорошее приложение",
+      "title": "Хорошее приложение",
+      "author": "николас к",
+      "text": "Из недостатков только проблемы с переводом даже на Английский, остальное супер",
+      "rating": 5,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "itunes-333206289-_r_a_i_-Шляпа полная",
+      "title": "Шляпа полная",
+      "author": "_r_a_i_",
+      "text": "На одном телефоне после верификации не приходят деньги, всегда отказ операции\nНа втором сначала не было русского языка, сейчас просто тупо не приходят коды подтверждения, какие машины, приложение сделать не могут нормальное, одним словом Китай…",
+      "rating": 2,
+      "date": "2026-09-02"
+    },
+    {
+      "id": "itunes-333206289-Марзх-Бесполезное приложение",
+      "title": "Бесполезное приложение",
+      "author": "Марзх",
+      "text": "Нельзя привязать ни одну  российскую карту, а учитывая , что в Китае все оплачивается через это приложение, то как платить вообще??! И интерфейс в 95% на китайском , даже на Английский не переведено . И что делать тогда туристу ? Как пользоваться приложением и оплачивать покупки ??",
+      "rating": 1,
+      "date": "2026-08-19"
+    },
+    {
+      "id": "itunes-333206289-sweetdaria7art-Отвратительно",
+      "title": "Отвратительно",
+      "author": "sweetdaria7art",
+      "text": "Деньги с карты не пришли! И в какой-то момент банк стал ограничивать оплаты и требовать повторную верификацию. Отвратительно. Нигде картой даже заграничного банка не оплатить.",
+      "rating": 1,
+      "date": "2026-08-04"
+    },
+    {
+      "id": "itunes-333206289-Joosy Jay-Только для местных",
+      "title": "Только для местных",
+      "author": "Joosy Jay",
+      "text": "Не вижу смысла в этом приложении для других стран. Верификацию запрашивает дважды, первую проходишь, а на второй тебя просит сканировать чип от загранпаспорта нового поколения или же добавить китайскую карту, чипы иностранные приложение не распознает, а карты Китайской нет и не будет, зачем были все заморочки до этого? Скажите сразу, что Россиянам платить нельзя. Покупайте через посредников уже верифицированные аккаунты, приложение туфта из-за верификации",
+      "rating": 1,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "itunes-333206289-benefitskssjehw-Ужасное приложение",
+      "title": "Ужасное приложение",
+      "author": "benefitskssjehw",
+      "text": "Такое ощущение, что его писали криворукие программисты. Постоянно тормозит, перевод не работает, вылетает из приложения. Нужно несколько раз перезайти, чтобы можно было что-то перевести",
+      "rating": 1,
+      "date": "2026-07-31"
+    }
+  ],
+  "screenshotURLs": [
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/fdaade5bc7e440ca.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/df25071f818913f5.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/b9c46e3f22a6b9d0.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/916165e85000f311.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/5d2f50184051b331.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/78e6c6ba898a3604.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1290x2796/aacf345676990368.jpg"
+  ],
+  "versions": [
+    {
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-30/e36d1926.ipa",
+      "size": 200633421,
+      "version": "12.12.38",
+      "date": "2026-10-30T00:00:00Z",
+      "minOSVersion": "15.0",
+      "localizedDescription": "The brand new version of Alipay is available, update now!\nMultiple details have been optimized for smoother operation.",
+      "buildVersion": "12.12.38.6000"
+    }
+  ],
+  "iconURL": "https://zstore.repo.jetspeed.pro/icons/180/9bd083bc.jpg",
+  "languages": [
+    "EN",
+    "ZH"
+  ],
+  "genreTags": [
+    "Образ жизни",
+    "Финансы"
+  ],
+  "size": 200633421,
+  "website": "http://qianbao.alipay.com/",
+  "privacyURL": "http://qianbao.alipay.com/",
+  "copyright": "© Alipay (Hangzhou) Technology Co., Ltd.",
+  "ageRating": "4+",
+  "rating": 3.27837,
+  "ratingCount": 467,
+  "screenshotsLandscape": false,
+  "appStoreURL": "https://apps.apple.com/ru/app/alipay-simplify-your-life/id333206289?uo=4",
+  "developerName": "Alipay (Hangzhou) Technology Co., Ltd."
+}
