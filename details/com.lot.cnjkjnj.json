@@ -1,0 +1,17 @@
+{
+  "localizedDescription": "Столото — приложение для iOS.\n\nВерсия 1.0 (build 1).",
+  "versions": [
+    {
+      "version": "1.0",
+      "buildVersion": "1",
+      "date": "2026-10-30T00:00:00Z",
+      "size": 3555004,
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-30/2471320c.ipa",
+      "minOSVersion": "16.6"
+    }
+  ],
+  "size": 3555004,
+  "ageRating": "12+",
+  "rating": 0,
+  "ratingCount": 0
+}

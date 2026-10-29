@@ -1,0 +1,54 @@
+{
+  "localizedDescription": "Приложение создано для инженеров и администраторов, которым важно быстро и удобно подключаться к своим серверам с iPhone, iPad и Mac — в любом месте и в любое время.\n\nКлючевые возможности:\nИмпорт конфигураций по ссылкам и через подписки\nАвтоматическое обновление списка серверов из ваших источников\nМониторинг качества соединения в реальном времени\nПодробная статистика использования трафика\nНативный интерфейс, оптимизированный для всей экосистемы Apple\n\nВажно: INCY не предоставляет серверы и не навязывает инфраструктуру.\nПриложение работает исключительно с вашими конфигурациями — вы полностью контролируете, к каким серверам и как подключаетесь.",
+  "versionDescription": "Исправление пинга и обновление ядра",
+  "screenshotURLs": [
+    "https://zstore.repo.jetspeed.pro/shots/1320x2868/ba8726fda9066fab.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1320x2868/e27d4c14f89d4432.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1320x2868/934a54a4b111ee55.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1320x2868/75d5258be2b07904.jpg",
+    "https://zstore.repo.jetspeed.pro/shots/1320x2868/254644d2c4aed47f.jpg"
+  ],
+  "versions": [
+    {
+      "downloadURL": "https://github.com/ZAUr0/r4n7-files/releases/download/ipa-2026-10-30/4e16968b.ipa",
+      "size": 88897523,
+      "version": "2.6.6",
+      "date": "2026-10-30T00:00:00Z",
+      "minOSVersion": "15.0",
+      "localizedDescription": "Исправление пинга и обновление ядра",
+      "buildVersion": "2610261136"
+    }
+  ],
+  "iconURL": "https://zstore.repo.jetspeed.pro/icons/1024/d407dcb6.jpg",
+  "languages": [
+    "AZ",
+    "EN",
+    "KK",
+    "KO",
+    "FA",
+    "RU",
+    "ZH",
+    "TK",
+    "UZ"
+  ],
+  "genreTags": [
+    "Утилиты",
+    "Разработчикам"
+  ],
+  "size": 88897523,
+  "website": "https://incy.cc/",
+  "privacyURL": "https://incy.cc/",
+  "copyright": "© LLC ITDEV",
+  "ageRating": "4+",
+  "rating": 3.89177,
+  "ratingCount": 462,
+  "screenshotsLandscape": false,
+  "headerImageURL": "https://is1-ssl.mzstatic.com/image/thumb/yZaqHsE9ZG4ja-FK-eByNA/1600x685bb.jpg",
+  "appStoreURL": "https://apps.apple.com/us/app/incy/id6756943388?l=ru&uo=4",
+  "privacyUnlinked": [
+    {
+      "identifier": "diagnostics",
+      "name": "Диагностика"
+    }
+  ]
+}
